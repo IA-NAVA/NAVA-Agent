@@ -85,6 +85,12 @@ NAVA has demonstrated its ability to execute concrete scenarios such as:
 - Executing an Excel → Thunderbird workflow
 - Executing a multi-step workflow across several applications
 
+  ## Public Demo Outputs
+
+Anonymized sample outputs generated during NAVA validation tests are available here:
+
+[View NAVA demo outputs](assets/demo-outputs/)
+
 ## Areas Still Under Improvement
 
 NAVA is still in private development.
