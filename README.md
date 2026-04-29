@@ -1,4 +1,4 @@
-# NAVA — Native Autonomous Virtual Agent
+# NAVA — Neural Autonomous Virtual Agent
 
 NAVA est un agent IA local développé par IA NAVA.
 
