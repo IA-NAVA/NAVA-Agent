@@ -1,6 +1,6 @@
 [English version](README.md)
 
-# NAVA — Neural Agentic Virtual Agent
+# NAVA Neural Agentic Virtual Agent
 
 NAVA est un agent IA local et agentique développé par IA NAVA.
 
