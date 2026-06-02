@@ -1,40 +1,54 @@
 [English version](README.md)
 
-# NAVA — Neural Autonomous Virtual Agent
+# NAVA — Neural Agentic Virtual Agent
 
-NAVA est un agent IA local développé par IA NAVA.
+NAVA est un agent IA local et agentique développé par IA NAVA.
 
-Il est conçu pour comprendre des instructions naturelles, identifier le logiciel adapté, exécuter des actions sur un environnement Windows réel, vérifier ses résultats et améliorer progressivement ses comportements.
+Il est conçu pour comprendre des instructions naturelles, identifier les logiciels adaptés, planifier des actions, exécuter des workflows sur un environnement Windows réel, vérifier les résultats obtenus, corriger certaines erreurs et améliorer progressivement ses comportements.
 
 ## Objectif
 
 Créer un agent IA capable d’assister un utilisateur dans ses tâches informatiques quotidiennes sans nécessiter de code, de copier-coller ou de manipulation technique.
 
-NAVA vise à rendre l’automatisation bureautique accessible à un utilisateur non technique, en permettant de piloter des logiciels réels à partir d’instructions naturelles.
+NAVA vise à rendre l’automatisation bureautique accessible à un utilisateur non technique, en permettant de piloter des logiciels réels à partir d’une simple demande écrite ou vocale.
+
+L’objectif n’est pas seulement d’ouvrir un logiciel ou de répondre à une commande isolée, mais de transformer une intention humaine en action numérique complète :
+
+comprendre → planifier → exécuter → vérifier → corriger → rendre compte.
 
 ## Capacités démontrées
 
 - Compréhension de commandes naturelles
 - Routage automatique vers les bons logiciels
-- Exécution de workflows Word, Excel, Thunderbird, Google Chrome et PowerPoint
-- Gestion de commandes multi-applications
+- Exécution de workflows multi-applications
+- Planification séquentielle de tâches complexes
 - Création de documents Word
 - Création et modification de fichiers Excel
-- Préparation de mails Thunderbird avec pièces jointes
+- Création de présentations PowerPoint
+- Préparation de mails Thunderbird sans envoi automatique
+- Lecture de mails Thunderbird dans les dossiers Courrier entrant des comptes configurés
+- Réponses Thunderbird avec signature du compte utilisé
+- Gestion de pièces jointes Thunderbird
+- Création de relances dans Google Calendar
 - Navigation et recherche web avec Google Chrome
 - Génération de fichiers bureautiques
 - Vérification des actions exécutées
+- Validation des fichiers créés
+- Validation des fenêtres Thunderbird ouvertes
+- Validation des pièces jointes demandées
 - Détection multi-écrans
 - Perception de l’environnement Windows
 - Mode vocal local
+- Fonctionnement LLM cloud ou local via Ollama selon les tâches
 - Architecture modulaire avec adapters logiciels
 - ProcessRegistry avec actions logicielles
+- Orchestrateur agentique multi-étapes
 - Mémoire comportementale
 - Auto-correction et amélioration progressive
 
 ## Résultats de validation
 
-NAVA a été testé avec deux batteries de validation internes exécutées en environnement Windows local.
+NAVA a été testé avec plusieurs batteries de validation internes exécutées en environnement Windows local.
 
 ### Test système complet v3
 
@@ -71,21 +85,45 @@ NAVA a été testé avec deux batteries de validation internes exécutées en en
 - Validation de l’auto-détection de pièces jointes Thunderbird
 - Validation des scénarios Word, Excel, Thunderbird et Google Chrome
 
+### Validations agentiques récentes
+
+Les derniers tests internes ont validé des workflows plus avancés :
+
+- Création locale de tableaux Excel avec colonnes, lignes et formules
+- Création locale de documents Word courts et export PDF
+- Création locale de présentations PowerPoint de 3 slides
+- Workflow PowerPoint → Word
+- Workflow Excel → Word → Thunderbird
+- Workflow Thunderbird → Excel → Word → Thunderbird → Google Calendar
+- Préparation de mails avec les bons fichiers joints
+- Création de relances Google Calendar avec dates relatives corrigées
+- Fonctionnement en mode LLM cloud
+- Fonctionnement en mode local uniquement via Ollama
+- Vérification renforcée des fichiers créés et des pièces jointes
+
 ## Démonstrations validées
 
 NAVA a démontré sa capacité à exécuter des scénarios concrets tels que :
 
 - Ouvrir Google Chrome, effectuer une recherche web, puis créer un rapport Word
-- Créer un tableau Excel avec colonnes et lignes dynamiques
+- Créer un tableau Excel avec colonnes, lignes dynamiques et formules
 - Modifier un fichier Excel existant
-- Préparer un mail Thunderbird avec une pièce jointe
-- Lire des mails non lus dans Thunderbird
-- Générer un document Word structuré avec sections
+- Créer une présentation PowerPoint de 3 slides
+- Créer un document Word puis l’exporter en PDF
+- Préparer un mail Thunderbird avec une ou plusieurs pièces jointes
+- Lire le dernier mail reçu d’un compte Thunderbird spécifique
+- Répondre à un mail Thunderbird sans envoyer
+- Utiliser la signature du compte Thunderbird utilisé
+- Générer une réponse professionnelle à partir d’un mail reçu
+- Créer une fiche Excel à partir d’un mail client
+- Joindre automatiquement le bon fichier à un brouillon Thunderbird
+- Programmer une relance dans Google Calendar
 - Exécuter un workflow Chrome → Word
 - Exécuter un workflow Excel → Thunderbird
-- Exécuter un workflow multi-étapes avec plusieurs logiciels
+- Exécuter un workflow Excel → Word → Thunderbird
+- Exécuter un workflow Thunderbird → Excel → Word → Thunderbird → Calendar
 
-  ## Sorties publiques de démonstration
+## Sorties publiques de démonstration
 
 Des exemples anonymisés générés pendant les tests de validation NAVA sont disponibles ici :
 
@@ -95,12 +133,15 @@ Des exemples anonymisés générés pendant les tests de validation NAVA sont di
 
 NAVA reste en phase de développement privé.
 
-Les derniers tests ont identifié quelques axes de correction :
+Les derniers tests ont identifié quelques axes de stabilisation :
 
-- Export PDF Word isolé dans certains cas
-- Gestion de certaines commandes Excel sans virgules entre les colonnes
-- Transmission Excel → Thunderbird dans certains scénarios complexes
-- Stabilisation de certains workflows très longs
+- Stabilisation fine du mode vocal et du comportement micro
+- Renforcement du journal de preuve après chaque workflow
+- Validation encore plus stricte des workflows très longs
+- Amélioration de la mémoire métier par utilisateur
+- Sécurisation renforcée des actions sensibles : envoi, suppression, archivage, déplacement
+- Meilleure distinction entre commande vocale ponctuelle et écoute continue
+- Amélioration de certains scénarios multi-applications très complexes
 
 Ces points sont identifiés, suivis et intégrés à la feuille de route technique.
 
