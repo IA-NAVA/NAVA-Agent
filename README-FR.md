@@ -1,149 +1,238 @@
+Voici une version mise à jour que tu peux utiliser comme README / présentation publique.
+
+```markdown
 [English version](README.md)
 
-# NAVA Neural Agentic Virtual Agent
+# NAVA — Neural Agentic Virtual Agent
 
 NAVA est un agent IA local et agentique développé par IA NAVA.
 
-Il est conçu pour comprendre des instructions naturelles, identifier les logiciels adaptés, planifier des actions, exécuter des workflows sur un environnement Windows réel, vérifier les résultats obtenus, corriger certaines erreurs et améliorer progressivement ses comportements.
+Il est conçu comme un **cerveau opérationnel** capable de comprendre une intention humaine, de choisir les bons outils logiciels, d’agir sur un PC Windows réel, de produire des livrables, de vérifier les résultats, de conserver des preuves et de planifier les actions suivantes.
+
+NAVA ne vise pas seulement à répondre à une question.  
+Il vise à transformer une demande utilisateur en **travail exécuté**.
+
+## Vision
+
+NAVA fonctionne selon une idée simple :
+
+- **NAVA est le cerveau**
+- **Le PC est le corps**
+- **Les logiciels sont les mains**
+- **Les fichiers, logs et agenda sont la mémoire**
+- **Les captures et validations sont les preuves**
+
+L’objectif est de permettre à un utilisateur non technique de déléguer des tâches informatiques complètes à partir d’une simple commande texte ou vocale.
+
+Le cycle agentique recherché est :
+
+```text
+comprendre → cadrer → décider → choisir les outils → exécuter → vérifier → prouver → mémoriser → adapter
+```
 
 ## Objectif
 
-Créer un agent IA capable d’assister un utilisateur dans ses tâches informatiques quotidiennes sans nécessiter de code, de copier-coller ou de manipulation technique.
+Créer un agent IA capable d’assister réellement un utilisateur dans ses tâches bureautiques, commerciales, documentaires et organisationnelles, sans nécessiter de code, de copier-coller ou de manipulation technique.
 
-NAVA vise à rendre l’automatisation bureautique accessible à un utilisateur non technique, en permettant de piloter des logiciels réels à partir d’une simple demande écrite ou vocale.
+NAVA peut travailler avec des logiciels réels comme Word, Excel, PowerPoint, Thunderbird, Chrome et Google Calendar.
 
-L’objectif n’est pas seulement d’ouvrir un logiciel ou de répondre à une commande isolée, mais de transformer une intention humaine en action numérique complète :
+Il ne se limite pas à ouvrir une application : il cherche à comprendre ce que l’utilisateur veut accomplir, puis construit une stratégie d’action adaptée.
 
-comprendre → planifier → exécuter → vérifier → corriger → rendre compte.
+## Principe de fonctionnement
+
+Avant d’agir, NAVA doit comprendre la demande :
+
+- de quoi parle-t-on ?
+- quel est l’objectif réel ?
+- quels livrables sont utiles ?
+- quels logiciels doivent être utilisés ?
+- quelles informations doivent être recherchées ?
+- quelles actions peuvent être exécutées immédiatement ?
+- quelles actions doivent rester en brouillon ou attendre validation ?
+
+Chaque mission décisionnelle produit désormais un cadrage initial :
+
+- sujet compris ;
+- type de mission ;
+- intention ;
+- résultat attendu ;
+- stratégie de traitement ;
+- incertitudes à consolider ;
+- premiers signaux exploités.
 
 ## Capacités démontrées
 
-- Compréhension de commandes naturelles
+- Compréhension de commandes naturelles texte et voix
 - Routage automatique vers les bons logiciels
 - Exécution de workflows multi-applications
-- Planification séquentielle de tâches complexes
-- Création de documents Word
+- Création de documents Word structurés
 - Création et modification de fichiers Excel
 - Création de présentations PowerPoint
 - Préparation de mails Thunderbird sans envoi automatique
-- Lecture de mails Thunderbird dans les dossiers Courrier entrant des comptes configurés
-- Réponses Thunderbird avec signature du compte utilisé
 - Gestion de pièces jointes Thunderbird
-- Création de relances dans Google Calendar
-- Navigation et recherche web avec Google Chrome
-- Génération de fichiers bureautiques
-- Vérification des actions exécutées
+- Lecture de mails Thunderbird
+- Création de relances Google Calendar
+- Navigation et recherche web avec Chrome
+- Génération de rapports, tableaux, présentations et dossiers complets
 - Validation des fichiers créés
-- Validation des fenêtres Thunderbird ouvertes
-- Validation des pièces jointes demandées
-- Détection multi-écrans
-- Perception de l’environnement Windows
-- Mode vocal local
-- Fonctionnement LLM cloud ou local via Ollama selon les tâches
-- Architecture modulaire avec adapters logiciels
-- ProcessRegistry avec actions logicielles
-- Orchestrateur agentique multi-étapes
+- Capture écran finale après action réelle
+- Journal de preuve agentique
+- Contrats d’exécution locaux
 - Mémoire comportementale
-- Auto-correction et amélioration progressive
+- Agenda interne autonome
+- Scheduler de tâches planifiées
+- Mode local via Ollama
+- Mode cloud possible via ChatGPT, Gemini ou Mistral web selon contexte
+- Auto-correction ciblée
+- Amélioration progressive du mode AUTO
 
-## Résultats de validation
+## Mode agentique décisionnel
 
-NAVA a été testé avec plusieurs batteries de validation internes exécutées en environnement Windows local.
+NAVA peut traiter des objectifs ouverts, par exemple :
 
-### Test système complet v3
+```text
+Développer l’activité IA NAVA de 30 % dans les 12 prochains mois.
+```
 
-- Score final : 98,2 %
-- Niveau : Excellent
-- Résultat : 221 validations OK, 4 échecs, 5 avertissements
-- Validation de l’environnement Windows
-- Validation de la structure du projet
-- Validation des imports critiques
-- Validation de la perception écran
-- Validation de la détection multi-écrans
-- Validation de la pile voix locale
-- Validation du routeur vocal
-- Validation du replay engine
-- Validation de l’intent executor
-- Validation des adapters logiciels
-- Validation du ProcessRegistry
-- Validation des actions Word, Excel, PowerPoint, PDF, Thunderbird et Google Chrome
-- Validation du routage voix → intention → exécution
+ou :
 
-### Test runtime v6
+```text
+Je veux obtenir 10 nouveaux clients dans les 30 jours.
+```
 
-- Score final : 93,0 %
-- Niveau : Production Ready
-- Résultat : 160 validations OK sur 172
-- Validation du pipeline complet
-- Validation des commandes complexes multi-étapes
-- Validation du routage générique
-- Validation des workflows multi-applications
-- Validation des workflows Google Chrome → Word
-- Validation des workflows Excel → Thunderbird
-- Validation des workflows Chrome → Excel → Thunderbird
-- Validation de la robustesse sur commandes longues, ambiguës et multi-applications
-- Validation de l’auto-détection de pièces jointes Thunderbird
-- Validation des scénarios Word, Excel, Thunderbird et Google Chrome
+ou :
 
-### Validations agentiques récentes
+```text
+Faire connaître le projet NAVA au niveau national.
+```
 
-Les derniers tests internes ont validé des workflows plus avancés :
+Dans ces cas, NAVA peut :
 
-- Création locale de tableaux Excel avec colonnes, lignes et formules
-- Création locale de documents Word courts et export PDF
-- Création locale de présentations PowerPoint de 3 slides
-- Workflow PowerPoint → Word
-- Workflow Excel → Word → Thunderbird
-- Workflow Thunderbird → Excel → Word → Thunderbird → Google Calendar
-- Préparation de mails avec les bons fichiers joints
-- Création de relances Google Calendar avec dates relatives corrigées
-- Fonctionnement en mode LLM cloud
-- Fonctionnement en mode local uniquement via Ollama
-- Vérification renforcée des fichiers créés et des pièces jointes
+- définir une stratégie ;
+- rechercher les informations nécessaires ;
+- produire les documents utiles ;
+- créer un plan d’action ;
+- préparer des mails ;
+- générer des supports de présentation ;
+- inscrire les suivis dans son agenda interne ;
+- mesurer et adapter la stratégie.
 
-## Démonstrations validées
+## Mode AUTO
 
-NAVA a démontré sa capacité à exécuter des scénarios concrets tels que :
+Le mode AUTO est conçu comme le système nerveux autonome de NAVA.
 
-- Ouvrir Google Chrome, effectuer une recherche web, puis créer un rapport Word
-- Créer un tableau Excel avec colonnes, lignes dynamiques et formules
-- Modifier un fichier Excel existant
-- Créer une présentation PowerPoint de 3 slides
-- Créer un document Word puis l’exporter en PDF
-- Préparer un mail Thunderbird avec une ou plusieurs pièces jointes
-- Lire le dernier mail reçu d’un compte Thunderbird spécifique
-- Répondre à un mail Thunderbird sans envoyer
-- Utiliser la signature du compte Thunderbird utilisé
-- Générer une réponse professionnelle à partir d’un mail reçu
-- Créer une fiche Excel à partir d’un mail client
-- Joindre automatiquement le bon fichier à un brouillon Thunderbird
-- Programmer une relance dans Google Calendar
-- Exécuter un workflow Chrome → Word
-- Exécuter un workflow Excel → Thunderbird
-- Exécuter un workflow Excel → Word → Thunderbird
-- Exécuter un workflow Thunderbird → Excel → Word → Thunderbird → Calendar
+Il peut :
 
-## Sorties publiques de démonstration
+- observer l’environnement ;
+- surveiller l’agenda interne ;
+- exécuter les tâches dues ;
+- apprendre à partir des fiches logiciels locales ;
+- éviter les apprentissages sans source ;
+- transformer un blocage en tâche d’apprentissage planifiée ;
+- attendre l’inactivité utilisateur avant de lancer des apprentissages.
 
-Des exemples anonymisés générés pendant les tests de validation NAVA sont disponibles ici :
+Règle actuelle :
 
-[Voir les sorties de démonstration NAVA](assets/demo-outputs/)
+```text
+Utilisateur actif → observation seule
+Tâche agenda due → exécution prioritaire
+PC inactif → apprentissage ou amélioration
+Pas de source → création d’une tâche de préparation
+```
+
+## Sécurité
+
+NAVA applique des garde-fous :
+
+- aucun mail envoyé sans validation explicite ;
+- les mails sont préparés en brouillon ;
+- les actions sensibles doivent rester contrôlées ;
+- les fichiers créés sont vérifiés ;
+- les workflows réels produisent une capture finale ;
+- les erreurs sont journalisées et peuvent devenir des tâches de correction.
+
+## Résultat agentique actuel
+
+Dernière mesure interne :
+
+```text
+Autonomie agentique réaliste : 95 %
+Score strict actions OK : 80 %
+Taux de preuve capture : 100 %
+```
+
+Ce score correspond aux familles déjà testées et prouvées, notamment :
+
+- Word
+- Excel
+- PowerPoint
+- Thunderbird
+- Google Calendar
+- PDF
+- workflows multi-livrables
+- documents avec pièces jointes
+- captures et preuves d’exécution
+
+NAVA n’est pas présenté comme un agent parfait ou généraliste absolu.  
+Il est présenté comme un agent local opérationnel en progression rapide.
+
+## Scénarios validés récemment
+
+NAVA a démontré sa capacité à :
+
+- créer un dossier de préparation événementiel ;
+- organiser une participation au Summer Tech Day de Toulouse ;
+- comprendre l’événement avant de produire les livrables ;
+- définir pourquoi participer ;
+- définir quoi présenter ;
+- générer un rapport Word ;
+- générer un tableau Excel de plan d’action ;
+- générer une présentation PowerPoint ;
+- préparer un brouillon Thunderbird ;
+- créer un événement Google Calendar ;
+- planifier les suivis dans son agenda interne.
+
+Autres scénarios validés :
+
+- stratégie nationale de visibilité NAVA ;
+- objectif commercial 10 clients en 30 jours ;
+- auto-correction à partir des erreurs récentes ;
+- plan stratégique de croissance ;
+- création de rapports Word spécifiques ;
+- génération de tableaux Excel structurés ;
+- préparation de mails avec pièces jointes ;
+- workflows Word / Excel / PowerPoint / Thunderbird / Calendar.
+
+## Différence avec un chatbot
+
+Un chatbot répond.
+
+NAVA cherche à agir.
+
+La différence principale :
+
+```text
+Chatbot : question → réponse
+NAVA : objectif → compréhension → stratégie → actions PC → livrables → preuves → suivi
+```
+
+NAVA est pensé pour être un agent opérateur local, capable d’utiliser le PC comme environnement d’exécution réel.
 
 ## Points encore en amélioration
 
-NAVA reste en phase de développement privé.
+NAVA reste en développement privé.
 
-Les derniers tests ont identifié quelques axes de stabilisation :
+Axes de consolidation :
 
-- Stabilisation fine du mode vocal et du comportement micro
-- Renforcement du journal de preuve après chaque workflow
-- Validation encore plus stricte des workflows très longs
-- Amélioration de la mémoire métier par utilisateur
-- Sécurisation renforcée des actions sensibles : envoi, suppression, archivage, déplacement
-- Meilleure distinction entre commande vocale ponctuelle et écoute continue
-- Amélioration de certains scénarios multi-applications très complexes
-
-Ces points sont identifiés, suivis et intégrés à la feuille de route technique.
+- endurance du mode AUTO sur cycles longs ;
+- tests 8h, 24h, 7 jours et 30 jours ;
+- élargissement des tests PowerPoint ;
+- tests supplémentaires sur pièces jointes mail ;
+- lecture, création, modification et suppression Google Calendar ;
+- stabilisation fine du mode vocal ;
+- amélioration de la mémoire métier utilisateur ;
+- meilleure exploitation des logiciels installés peu utilisés ;
+- consolidation des capacités d’auto-apprentissage logiciel.
 
 ## Statut
 
@@ -151,14 +240,14 @@ Le cœur du moteur NAVA reste propriétaire et privé.
 
 Ce dépôt public présente uniquement :
 
-- La vision du projet
-- L’architecture générale
-- Les capacités démontrées
-- Les résultats de validation
-- Les démonstrations publiques
-- La feuille de route
+- la vision du projet ;
+- les capacités démontrées ;
+- les résultats de validation ;
+- les scénarios publics ;
+- la feuille de route ;
+- la philosophie agentique.
 
-Le code source complet, les modules internes, les adapters avancés, la mémoire, les fichiers de routage, les journaux détaillés et les mécanismes d’auto-correction ne sont pas publiés.
+Le code source complet, les modules internes, les adapters avancés, la mémoire, les journaux détaillés et les mécanismes d’auto-correction ne sont pas publiés.
 
 ## Propriété intellectuelle
 
@@ -173,3 +262,4 @@ Aucune reproduction, modification, redistribution ou exploitation commerciale du
 IA NAVA  
 https://www.ianava.fr  
 contact@ianava.fr
+```
