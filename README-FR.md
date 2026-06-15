@@ -1,265 +1,535 @@
-Voici une version mise à jour que tu peux utiliser comme README / présentation publique.
-
-```markdown
-[English version](README.md)
-
 # NAVA — Neural Agentic Virtual Agent
+
+[English version](README.md)
 
 NAVA est un agent IA local et agentique développé par IA NAVA.
 
-Il est conçu comme un **cerveau opérationnel** capable de comprendre une intention humaine, de choisir les bons outils logiciels, d’agir sur un PC Windows réel, de produire des livrables, de vérifier les résultats, de conserver des preuves et de planifier les actions suivantes.
+Il est conçu comme un **cerveau opérationnel** capable de comprendre une intention humaine, de choisir les bonnes capacités, d'utiliser les logiciels disponibles sur un PC réel, de produire des livrables, de vérifier les résultats, de générer des preuves, d'apprendre de ses expériences et de réutiliser automatiquement les compétences validées.
 
-NAVA ne vise pas seulement à répondre à une question.  
-Il vise à transformer une demande utilisateur en **travail exécuté**.
+NAVA ne vise pas seulement à répondre à une question.
 
-## Vision
+NAVA vise à transformer une intention utilisateur en **travail réellement exécuté et prouvé**.
+
+---
+
+# Vision
 
 NAVA fonctionne selon une idée simple :
 
-- **NAVA est le cerveau**
-- **Le PC est le corps**
-- **Les logiciels sont les mains**
-- **Les fichiers, logs et agenda sont la mémoire**
-- **Les captures et validations sont les preuves**
+* **NAVA est le cerveau**
+* **Le PC est le corps**
+* **Les logiciels sont les mains**
+* **Les fichiers, journaux et métriques sont la mémoire**
+* **Les captures et validations sont les preuves**
+* **La confiance guide les décisions**
+* **L'apprentissage améliore les futures missions**
 
-L’objectif est de permettre à un utilisateur non technique de déléguer des tâches informatiques complètes à partir d’une simple commande texte ou vocale.
+L'objectif est de permettre à un utilisateur non technique de déléguer des tâches informatiques complètes à partir d'une simple commande texte ou vocale.
 
 Le cycle agentique recherché est :
 
 ```text
-comprendre → cadrer → décider → choisir les outils → exécuter → vérifier → prouver → mémoriser → adapter
+comprendre
+↓
+cadrer
+↓
+décider
+↓
+choisir les capacités
+↓
+sélectionner les outils
+↓
+agir
+↓
+vérifier
+↓
+prouver
+↓
+apprendre
+↓
+mémoriser
+↓
+réutiliser
+↓
+s'améliorer
 ```
 
-## Objectif
+---
 
-Créer un agent IA capable d’assister réellement un utilisateur dans ses tâches bureautiques, commerciales, documentaires et organisationnelles, sans nécessiter de code, de copier-coller ou de manipulation technique.
+# Objectif
 
-NAVA peut travailler avec des logiciels réels comme Word, Excel, PowerPoint, Thunderbird, Chrome et Google Calendar.
+Créer un agent IA capable d'assister réellement un utilisateur dans ses tâches :
 
-Il ne se limite pas à ouvrir une application : il cherche à comprendre ce que l’utilisateur veut accomplir, puis construit une stratégie d’action adaptée.
+* bureautiques ;
+* commerciales ;
+* documentaires ;
+* organisationnelles ;
+* décisionnelles ;
+* administratives ;
+* stratégiques.
 
-## Principe de fonctionnement
+Sans nécessiter :
 
-Avant d’agir, NAVA doit comprendre la demande :
+* de code ;
+* de copier-coller ;
+* de manipulations techniques ;
+* de workflows prédéfinis.
 
-- de quoi parle-t-on ?
-- quel est l’objectif réel ?
-- quels livrables sont utiles ?
-- quels logiciels doivent être utilisés ?
-- quelles informations doivent être recherchées ?
-- quelles actions peuvent être exécutées immédiatement ?
-- quelles actions doivent rester en brouillon ou attendre validation ?
+NAVA cherche à comprendre ce que l'utilisateur veut accomplir, puis construit une stratégie d'action adaptée.
 
-Chaque mission décisionnelle produit désormais un cadrage initial :
+---
 
-- sujet compris ;
-- type de mission ;
-- intention ;
-- résultat attendu ;
-- stratégie de traitement ;
-- incertitudes à consolider ;
-- premiers signaux exploités.
+# Principe de fonctionnement
 
-## Capacités démontrées
+Avant d'agir, NAVA cherche à comprendre :
 
-- Compréhension de commandes naturelles texte et voix
-- Routage automatique vers les bons logiciels
-- Exécution de workflows multi-applications
-- Création de documents Word structurés
-- Création et modification de fichiers Excel
-- Création de présentations PowerPoint
-- Préparation de mails Thunderbird sans envoi automatique
-- Gestion de pièces jointes Thunderbird
-- Lecture de mails Thunderbird
-- Création de relances Google Calendar
-- Navigation et recherche web avec Chrome
-- Génération de rapports, tableaux, présentations et dossiers complets
-- Validation des fichiers créés
-- Capture écran finale après action réelle
-- Journal de preuve agentique
-- Contrats d’exécution locaux
-- Mémoire comportementale
-- Agenda interne autonome
-- Scheduler de tâches planifiées
-- Mode local via Ollama
-- Mode cloud possible via ChatGPT, Gemini ou Mistral web selon contexte
-- Auto-correction ciblée
-- Amélioration progressive du mode AUTO
+* de quoi parle-t-on ?
+* quel est l'objectif réel ?
+* quels livrables sont nécessaires ?
+* quelles capacités doivent être mobilisées ?
+* quels outils sont disponibles ?
+* quelles informations sont pertinentes ?
+* quelles actions peuvent être exécutées immédiatement ?
+* quelles actions doivent être reportées ?
+* quelles actions nécessitent un apprentissage ?
 
-## Mode agentique décisionnel
+Chaque mission produit un cadrage initial :
 
-NAVA peut traiter des objectifs ouverts, par exemple :
+* sujet compris ;
+* type de mission ;
+* objectif ;
+* stratégie ;
+* contexte ;
+* incertitudes ;
+* capacités requises ;
+* score de confiance ;
+* preuves attendues.
+
+---
+
+# Architecture Agentique
+
+Le moteur suit désormais une boucle complète :
 
 ```text
-Développer l’activité IA NAVA de 30 % dans les 12 prochains mois.
+MISSION
+↓
+COMPRÉHENSION
+↓
+OBJECTIF
+↓
+CONTEXTE
+↓
+CAPACITÉS
+↓
+OUTILS DISPONIBLES
+↓
+CONFIANCE NAVA
+↓
+DÉCISION
+↓
+EXÉCUTION
+↓
+VÉRIFICATION
+↓
+APPRENTISSAGE
+↓
+MÉMOIRE
+↓
+RÉUTILISATION
 ```
 
-ou :
+---
+
+# Algorithme de Confiance NAVA
+
+Avant toute décision, NAVA calcule :
 
 ```text
-Je veux obtenir 10 nouveaux clients dans les 30 jours.
+Confiance = √(Fiabilité² + Adaptabilité²) / √2
 ```
 
-ou :
+La fiabilité prend en compte :
+
+* les réussites passées ;
+* les preuves disponibles ;
+* les outils disponibles ;
+* les validations précédentes.
+
+L'adaptabilité prend en compte :
+
+* les alternatives possibles ;
+* les fallbacks ;
+* les capacités d'apprentissage ;
+* les stratégies de correction.
+
+Le score influence :
+
+* l'exécution ;
+* le report ;
+* la clarification ;
+* l'entrée en mode apprentissage.
+
+---
+
+# Capacités démontrées
+
+### Compréhension
+
+* compréhension de commandes naturelles ;
+* compréhension d'objectifs ouverts ;
+* routage décisionnel ;
+* arbitrage ;
+* priorisation.
+
+### Documents
+
+* génération de rapports ;
+* génération de synthèses ;
+* génération de devis ;
+* génération de dossiers complets ;
+* génération de présentations.
+
+### Tableurs
+
+* création ;
+* modification ;
+* calculs ;
+* graphiques ;
+* tableaux structurés.
+
+### Multi-logiciels
+
+* coordination de plusieurs logiciels ;
+* création de dossiers complets ;
+* génération de preuves ;
+* fermeture contrôlée.
+
+### Messagerie
+
+* lecture ;
+* analyse ;
+* brouillons ;
+* pièces jointes ;
+* réponses préparées.
+
+### Agenda
+
+* lecture ;
+* création ;
+* rappels ;
+* planification.
+
+### Décision Agentique
+
+* arbitrage ;
+* choix des actions ;
+* choix des capacités ;
+* calcul de confiance ;
+* justification des décisions.
+
+### Apprentissage
+
+* détection d'une lacune ;
+* création d'une fiche d'apprentissage ;
+* test minimal ;
+* promotion contrôlée ;
+* mémorisation.
+
+### Mémoire
+
+* mémoire de compétences ;
+* mémoire d'apprentissage ;
+* mémoire d'exécution ;
+* réutilisation des compétences validées.
+
+---
+
+# Apprentissage Agentique
+
+Lorsque NAVA rencontre un élément inconnu :
+
+* logiciel ;
+* capacité ;
+* métier ;
+* document ;
+* workflow ;
+* environnement ;
+
+il applique :
 
 ```text
-Faire connaître le projet NAVA au niveau national.
+IDENTIFICATION
+↓
+ANALYSE
+↓
+APPRENTISSAGE
+↓
+TEST MINIMAL
+↓
+MESURE
+↓
+VALIDATION
+↓
+MÉMOIRE
 ```
 
-Dans ces cas, NAVA peut :
+Une compétence n'est ajoutée à la mémoire que si :
 
-- définir une stratégie ;
-- rechercher les informations nécessaires ;
-- produire les documents utiles ;
-- créer un plan d’action ;
-- préparer des mails ;
-- générer des supports de présentation ;
-- inscrire les suivis dans son agenda interne ;
-- mesurer et adapter la stratégie.
+* le test est réussi ;
+* la preuve est générée ;
+* la confiance dépasse le seuil ;
+* la compétence est réutilisable.
 
-## Mode AUTO
+---
 
-Le mode AUTO est conçu comme le système nerveux autonome de NAVA.
+# Mémoire et Expérience
 
-Il peut :
+NAVA possède désormais :
 
-- observer l’environnement ;
-- surveiller l’agenda interne ;
-- exécuter les tâches dues ;
-- apprendre à partir des fiches logiciels locales ;
-- éviter les apprentissages sans source ;
-- transformer un blocage en tâche d’apprentissage planifiée ;
-- attendre l’inactivité utilisateur avant de lancer des apprentissages.
+### Mémoire de compétences
 
-Règle actuelle :
+Compétences validées :
 
 ```text
-Utilisateur actif → observation seule
-Tâche agenda due → exécution prioritaire
-PC inactif → apprentissage ou amélioration
-Pas de source → création d’une tâche de préparation
+memory/nava_skills.json
 ```
 
-## Sécurité
+### Mémoire d'apprentissage
 
-NAVA applique des garde-fous :
-
-- aucun mail envoyé sans validation explicite ;
-- les mails sont préparés en brouillon ;
-- les actions sensibles doivent rester contrôlées ;
-- les fichiers créés sont vérifiés ;
-- les workflows réels produisent une capture finale ;
-- les erreurs sont journalisées et peuvent devenir des tâches de correction.
-
-## Résultat agentique actuel
-
-Dernière mesure interne :
+Compétences en cours d'acquisition :
 
 ```text
-Autonomie agentique réaliste : 95 %
-Score strict actions OK : 80 %
-Taux de preuve capture : 100 %
+memory/nava_learning_events.json
 ```
 
-Ce score correspond aux familles déjà testées et prouvées, notamment :
+### Mémoire d'exécution
 
-- Word
-- Excel
-- PowerPoint
-- Thunderbird
-- Google Calendar
-- PDF
-- workflows multi-livrables
-- documents avec pièces jointes
-- captures et preuves d’exécution
-
-NAVA n’est pas présenté comme un agent parfait ou généraliste absolu.  
-Il est présenté comme un agent local opérationnel en progression rapide.
-
-## Scénarios validés récemment
-
-NAVA a démontré sa capacité à :
-
-- créer un dossier de préparation événementiel ;
-- organiser une participation au Summer Tech Day de Toulouse ;
-- comprendre l’événement avant de produire les livrables ;
-- définir pourquoi participer ;
-- définir quoi présenter ;
-- générer un rapport Word ;
-- générer un tableau Excel de plan d’action ;
-- générer une présentation PowerPoint ;
-- préparer un brouillon Thunderbird ;
-- créer un événement Google Calendar ;
-- planifier les suivis dans son agenda interne.
-
-Autres scénarios validés :
-
-- stratégie nationale de visibilité NAVA ;
-- objectif commercial 10 clients en 30 jours ;
-- auto-correction à partir des erreurs récentes ;
-- plan stratégique de croissance ;
-- création de rapports Word spécifiques ;
-- génération de tableaux Excel structurés ;
-- préparation de mails avec pièces jointes ;
-- workflows Word / Excel / PowerPoint / Thunderbird / Calendar.
-
-## Différence avec un chatbot
-
-Un chatbot répond.
-
-NAVA cherche à agir.
-
-La différence principale :
+Historique réel :
 
 ```text
-Chatbot : question → réponse
-NAVA : objectif → compréhension → stratégie → actions PC → livrables → preuves → suivi
+memory/nava_execution_metrics.json
 ```
 
-NAVA est pensé pour être un agent opérateur local, capable d’utiliser le PC comme environnement d’exécution réel.
+Chaque mission enregistre :
 
-## Points encore en amélioration
+* succès ;
+* échec ;
+* durée ;
+* qualité ;
+* preuve ;
+* confiance avant ;
+* confiance après ;
+* outil utilisé ;
+* capacité utilisée.
 
-NAVA reste en développement privé.
+Cette mémoire influence directement les futures décisions.
 
-Axes de consolidation :
+---
 
-- endurance du mode AUTO sur cycles longs ;
-- tests 8h, 24h, 7 jours et 30 jours ;
-- élargissement des tests PowerPoint ;
-- tests supplémentaires sur pièces jointes mail ;
-- lecture, création, modification et suppression Google Calendar ;
-- stabilisation fine du mode vocal ;
-- amélioration de la mémoire métier utilisateur ;
-- meilleure exploitation des logiciels installés peu utilisés ;
-- consolidation des capacités d’auto-apprentissage logiciel.
+# Sécurité
 
-## Statut
+NAVA applique plusieurs garde-fous :
 
-Le cœur du moteur NAVA reste propriétaire et privé.
+### Mail Gate
 
-Ce dépôt public présente uniquement :
+* aucun envoi automatique ;
+* brouillons uniquement ;
+* destinataire requis ;
+* justification obligatoire.
 
-- la vision du projet ;
-- les capacités démontrées ;
-- les résultats de validation ;
-- les scénarios publics ;
-- la feuille de route ;
-- la philosophie agentique.
+### Calendar Gate
 
-Le code source complet, les modules internes, les adapters avancés, la mémoire, les journaux détaillés et les mécanismes d’auto-correction ne sont pas publiés.
+* aucun rendez-vous automatique sans besoin réel ;
+* date exploitable obligatoire ;
+* justification obligatoire.
 
-## Propriété intellectuelle
+### Learning Gate
+
+* aucune compétence promue sans preuve ;
+* aucun apprentissage validé sans test.
+
+### Verification Gate
+
+* vérification du fichier ;
+* vérification du contenu ;
+* vérification des fenêtres ;
+* preuve obligatoire.
+
+---
+
+# Résultat Actuel
+
+Dernier protocole de validation :
+
+```text
+Maturité technologique validée : 96,4 %
+```
+
+Axes validés :
+
+| Axe                      | Résultat |
+| ------------------------ | -------- |
+| Autonomie locale         | 100 %    |
+| Capacité agentique       | 100 %    |
+| Exécution réelle PC      | 100 %    |
+| Apprentissage autonome   | 100 %    |
+| Mémoire et réutilisation | 100 %    |
+| Preuve produit interface | 100 %    |
+| Robustesse               | 88 %     |
+| Preuve visuelle          | 80 %     |
+| Sans cloud obligatoire   | 100 %    |
+
+---
+
+# Les 6 Niveaux de Preuve
+
+### Niveau 1 — Exécution locale réelle
+
+* création ;
+* ouverture ;
+* vérification ;
+* capture ;
+* preuve.
+
+### Niveau 2 — Multi-logiciels
+
+* Excel ;
+* Word ;
+* PowerPoint ;
+* orchestration locale.
+
+### Niveau 3 — Décision agentique
+
+* mission ouverte ;
+* arbitrage ;
+* confiance ;
+* décisions.
+
+### Niveau 4 — Apprentissage autonome
+
+* capacité inconnue ;
+* test minimal ;
+* promotion contrôlée.
+
+### Niveau 5 — Mémoire et amélioration
+
+* réutilisation ;
+* métriques ;
+* amélioration mesurable.
+
+### Niveau 6 — Preuve produit via interface
+
+Validation :
+
+```text
+Interface NAVA
+↓
+_execute_command()
+↓
+Routeur principal
+↓
+Workflow
+↓
+Exécution locale
+↓
+Vérification
+↓
+Preuve
+```
+
+avec :
+
+```text
+source_commande = interface
+routeur_utilise = routeur principal NAVA
+script_direct = false
+```
+
+---
+
+# Différence avec un Chatbot
+
+```text
+Chatbot
+↓
+Question
+↓
+Réponse
+```
+
+```text
+NAVA
+↓
+Objectif
+↓
+Compréhension
+↓
+Décision
+↓
+Capacités
+↓
+Actions PC
+↓
+Livrables
+↓
+Preuves
+↓
+Mémoire
+↓
+Amélioration
+```
+
+NAVA est conçu comme un agent opérateur local.
+
+---
+
+# Limites Actuelles
+
+Axes encore en amélioration :
+
+* robustesse sur très longues durées ;
+* endurance 24h / 7 jours / 30 jours ;
+* amélioration de la preuve visuelle ;
+* meilleure analyse sémantique des livrables ;
+* calibration statistique de la confiance ;
+* enrichissement automatique des capacités ;
+* exploitation avancée des logiciels peu utilisés ;
+* amélioration continue du moteur vocal.
+
+---
+
+# Statut
+
+NAVA est un projet propriétaire développé par IA NAVA.
+
+Le dépôt public présente :
+
+* la vision ;
+* les capacités ;
+* les validations ;
+* les résultats ;
+* les scénarios démontrés ;
+* la feuille de route.
+
+Le cœur du moteur, les mécanismes internes, la mémoire complète, les adapters avancés, les journaux détaillés et les stratégies d'auto-correction restent privés.
+
+---
+
+# Propriété intellectuelle
 
 NAVA est un projet propriétaire développé par IA NAVA.
 
 Copyright © 2026 IA NAVA — Tous droits réservés.
 
-Aucune reproduction, modification, redistribution ou exploitation commerciale du code source, de l’architecture, des mécanismes internes ou du concept technique n’est autorisée sans accord écrit préalable.
+Aucune reproduction, modification, redistribution ou exploitation commerciale du code source, de l'architecture, des mécanismes internes ou du concept technique n'est autorisée sans autorisation écrite préalable.
 
-## Contact
+---
 
-IA NAVA  
-https://www.ianava.fr  
-contact@ianava.fr
-```
+# Contact
+
+IA NAVA
+
+https://www.ianava.fr
+
+[contact@ianava.fr](mailto:contact@ianava.fr)
