@@ -1,0 +1,35 @@
+# NAVA — État technologique / Technology status
+
+**Point d'étape : 11 octobre 2026 / Snapshot: October 11, 2026**
+
+Ce document distingue les **preuves terrain rapportées** des **tests techniques**. Les informations proviennent des comptes rendus locaux communiqués ; elles n'ont pas fait l'objet d'un audit externe indépendant.
+
+This document distinguishes **reported real-world execution evidence** from **technical test passes**. The information comes from provided local test reports and is not an independent external audit.
+
+| Domaine / Area | Résultat rapporté / Reported result | Validation / Qualification |
+|---|---|---|
+| Noyau AUTO / AUTO core | **302 tests passed**, `py_compile=PASS`, `git diff --check=PASS` | Validation technique, pas preuve de toutes les commandes métier / Technical validation, not end-to-end business certification |
+| Heartbeat AUTO | Arrêt du superviseur : indicateur de thread vivant invalidé et persisté ; aucune création d'un second opérateur Windows | Non-régression technique couverte par tests ciblés / Targeted regression coverage |
+| Contrôle de fenêtre / Window control | Fenêtre NAVA réellement minimisée et restaurée ; fichiers de preuve locaux signalés | **PASS_REAL pour ces deux commandes uniquement / For those two commands only** |
+| Navigation Chrome / Chrome context | En cas d'incertitude, le système évite de mémoriser un onglet comme actif sans observation | **Test Chrome réel non prouvé / Real Chrome test not proven** |
+| Agenda | Scénarios de rendez-vous réussis via l'interface ; reprise d'un dossier sans recréer le rendez-vous | Réussites ponctuelles, couverture complète non certifiée / Individual successes only |
+| Devis Excel / Excel quotation | Devis Altonato existant, ouvert et contrôlé ; montants rapportés **4 400 € + 3 080 € = 7 480 €** ; preuve `PASS` indiquée | **Fichier vérifié pour ce dossier / Verified specific deliverable** |
+| Thunderbird | Défaut restant : raccordement du devis vérifié, de la pièce jointe réelle et du brouillon | **Non certifié / Not certified** |
+| Word et PowerPoint | Production de livrables lors d'essais locaux antérieurs | Validation complète au protocole restant à démontrer / Protocol coverage not proven |
+| Effets demandés / Requested effects | Plan LLM indicatif, suivi des effets et mécanismes de garde rapportés | Identification indépendante à l'ingress et preuve bout-en-bout encore à confirmer / End-to-end proof pending |
+| Auto-réparation / Self-repair | Mécanismes partiels et protections existants | **Réparation autonome complète non prouvée / Not proven** |
+
+## Blocages encore ouverts / Remaining blockers
+
+1. Vérifier en situation réelle la réactivation d'un onglet Chrome existant, sans création d'onglet inutile et sans perte du brouillon ou de la conversation.
+2. Terminer le raccordement **devis Excel vérifié → pièce jointe réelle → brouillon Thunderbird**, sans recréer le devis ni le rendez-vous.
+3. Reprendre les autres familles non certifiées (Office, Cloud, Social, Agenda avancée) selon le protocole d'acceptation.
+4. Démontrer une auto-réparation authentique complète avant d'en revendiquer l'autonomie.
+
+## Règle d'acceptation / Acceptance rule
+
+**PASS_REAL = action réelle observée + résultat vérifié + preuve persistée**, et une fonction n'est terminée qu'après réussite répétée des commandes pertinentes depuis l'interface NAVA. Les tests logiciels constituent des garanties complémentaires, non un substitut.
+
+**PASS_REAL = observed actual action + verified result + persistent evidence.** A capability is finished only after repeated relevant command successes via the actual NAVA interface. Software tests are supporting checks, not substitutes.
+
+Les chemins de preuve locaux, noms de clients et journaux complets ne sont volontairement pas publiés ici. / Private local proof paths, client details and logs are intentionally not published.
