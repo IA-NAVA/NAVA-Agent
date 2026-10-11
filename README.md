@@ -1,532 +1,599 @@
 # NAVA — Neural Agentic Virtual Agent
 
-[Version française](README_FR.md)
+**From Human Intent to Real Execution.**
 
-NAVA is a local, agentic AI developed by IA NAVA.
+NAVA is a local-first, agentic AI system developed by **IA NAVA in France**.
 
-It is designed as an **operational intelligence engine** capable of understanding human intent, selecting the appropriate capabilities, using real software on a Windows PC, producing deliverables, verifying results, generating evidence, learning from experience, and reusing validated skills automatically.
+Unlike traditional conversational assistants, NAVA is designed to understand human intentions, make operational decisions, interact with real Windows applications, produce professional deliverables, verify outcomes, and generate evidence of completed work.
 
-NAVA is not designed merely to answer questions.
+**NAVA does not simply answer questions. It is designed to get work done.**
 
-Its purpose is to transform a user's intention into **real, verifiable work execution**.
+[Official Website](https://www.ianava.fr) | [Contact](mailto:contact@ianava.fr)
 
 ---
 
-# Vision
+## 1. Vision — AI That Actually Works
 
-NAVA is built around a simple principle:
+NAVA introduces a different relationship between humans and computers.
 
-* **NAVA is the brain**
-* **The PC is the body**
-* **Software applications are the hands**
-* **Files, logs and metrics are the memory**
-* **Screenshots and validations are the evidence**
-* **Confidence drives decisions**
-* **Learning improves future missions**
+- **NAVA is the brain.**
+- **Windows is the operating environment.**
+- **Applications are the tools.**
+- **Files are the deliverables.**
+- **Memory stores experience.**
+- **Verification ensures quality.**
+- **Evidence demonstrates completion.**
 
-The goal is to allow non-technical users to delegate complete computer-based tasks through a simple text or voice command.
+The objective is simple: allow users to delegate complete computer-based tasks using natural language, without programming or manually coordinating multiple applications.
 
-The targeted agentic cycle is:
+### The Agentic Execution Cycle
 
 ```text
-understand
-↓
-frame
-↓
-decide
-↓
-select capabilities
-↓
-choose tools
-↓
-act
-↓
-verify
-↓
-prove
-↓
-learn
-↓
-memorize
-↓
-reuse
-↓
-improve
-```
-
----
-
-# Objective
-
-Build an AI agent capable of genuinely assisting users with:
-
-* administrative work;
-* business tasks;
-* documentation;
-* organization;
-* decision-making;
-* project management;
-* operational workflows.
-
-Without requiring:
-
-* programming;
-* copy-paste operations;
-* technical knowledge;
-* predefined workflows.
-
-NAVA aims to understand what the user wants to accomplish and then build an appropriate execution strategy.
-
----
-
-# Operating Principle
-
-Before acting, NAVA attempts to understand:
-
-* What is the mission?
-* What is the real objective?
-* Which deliverables are required?
-* Which capabilities are needed?
-* Which tools are available?
-* Which information is relevant?
-* What can be executed immediately?
-* What should be postponed?
-* What requires learning?
-
-Every mission generates an operational briefing:
-
-* mission understanding;
-* mission type;
-* objective;
-* strategy;
-* context;
-* uncertainties;
-* required capabilities;
-* confidence score;
-* expected evidence.
-
----
-
-# Agentic Architecture
-
-NAVA now follows a complete operational loop:
-
-```text
-MISSION
-↓
+HUMAN INTENT
+     ↓
 UNDERSTANDING
-↓
-OBJECTIVE
-↓
-CONTEXT
-↓
-CAPABILITIES
-↓
-AVAILABLE TOOLS
-↓
-NAVA CONFIDENCE
-↓
+     ↓
+OBJECTIVE DEFINITION
+     ↓
+CAPABILITY SELECTION
+     ↓
 DECISION
-↓
+     ↓
 EXECUTION
-↓
+     ↓
 VERIFICATION
-↓
-LEARNING
-↓
+     ↓
+EVIDENCE
+     ↓
 MEMORY
-↓
-REUSE
+     ↓
+CONTINUOUS IMPROVEMENT
 ```
+
+NAVA aims to transform an instruction into a measurable, verifiable outcome.
 
 ---
 
-# NAVA Confidence Engine
+## 2. Beyond Traditional Chatbots
 
-Before making a decision, NAVA calculates:
+Traditional conversational AI primarily generates information.
 
-```text
-Confidence = √(Reliability² + Adaptability²) / √2
-```
+NAVA is designed to operate directly within the user's computing environment.
 
-Reliability considers:
+| Traditional Chatbot | NAVA |
+|---|---|
+| Answers questions | Executes computer tasks |
+| Generates text | Produces native deliverables |
+| Suggests procedures | Coordinates software actions |
+| Relies on user execution | Performs supported operations |
+| Reports generated responses | Verifies actual results |
+| Provides information | Produces execution evidence |
+| Limited workflow continuity | Maintains mission context and execution state |
 
-* previous successes;
-* available evidence;
-* tool availability;
-* historical validation.
-
-Adaptability considers:
-
-* alternative methods;
-* fallback strategies;
-* learning capabilities;
-* correction mechanisms.
-
-The confidence score influences:
-
-* execution;
-* postponement;
-* clarification;
-* learning mode activation.
+**The key difference is the transition from AI-generated answers to AI-executed work.**
 
 ---
 
-# Demonstrated Capabilities
+## 3. Natural Language to Real Computer Actions
 
-### Understanding
+NAVA is built to interpret business objectives expressed in everyday language.
 
-* natural language understanding;
-* open-goal interpretation;
-* mission routing;
-* prioritization;
-* operational arbitration.
+### Example — Business Administration
 
-### Documents
+> Review my upcoming meetings, identify the necessary preparations, create the relevant documents, and prepare the corresponding email drafts.
 
-* reports;
-* summaries;
-* proposals;
-* business documents;
-* presentations.
+NAVA's intended workflow includes:
 
-### Spreadsheets
+1. Reading relevant calendar events.
+2. Understanding their descriptions and objectives.
+3. Identifying required preparations.
+4. Selecting available capabilities.
+5. Locating relevant documents.
+6. Generating the necessary deliverables.
+7. Preparing email drafts when appropriate.
+8. Verifying the resulting files and application states.
+9. Requesting authorization for sensitive operations.
+10. Reporting completed actions with evidence.
 
-* creation;
-* modification;
-* calculations;
-* dashboards;
-* structured tables.
-
-### Multi-Software Execution
-
-* software orchestration;
-* project folder generation;
-* evidence production;
-* controlled opening and closing.
-
-### Messaging
-
-* email reading;
-* email analysis;
-* draft preparation;
-* attachment handling;
-* response drafting.
-
-### Scheduling
-
-* calendar reading;
-* event creation;
-* reminders;
-* planning assistance.
-
-### Agentic Decision-Making
-
-* prioritization;
-* action selection;
-* capability selection;
-* confidence scoring;
-* decision justification.
-
-### Learning
-
-* knowledge gap detection;
-* learning card generation;
-* minimal test execution;
-* controlled promotion;
-* memory update.
-
-### Memory
-
-* skill memory;
-* learning memory;
-* execution memory;
-* reuse of validated competencies.
+Users specify **what they want to accomplish**, rather than providing detailed computer instructions.
 
 ---
 
-# Agentic Learning
+## 4. Windows Execution Capabilities
 
-When NAVA encounters an unknown:
+NAVA operates through an existing Windows environment.
 
-* software;
-* capability;
-* profession;
-* document;
-* workflow;
-* environment;
+Its supported and tested capability areas include:
 
-it follows:
+### Desktop Operations
 
-```text
-IDENTIFICATION
-↓
-ANALYSIS
-↓
-LEARNING
-↓
-MINIMAL TEST
-↓
-MEASUREMENT
-↓
-VALIDATION
-↓
-MEMORY
-```
+- Application opening and closing.
+- Active window identification.
+- Software navigation.
+- File creation and modification.
+- Application state verification.
+- Evidence collection.
 
-A skill is added to memory only if:
+### Microsoft Word
 
-* the test succeeds;
-* evidence is generated;
-* confidence exceeds the threshold;
-* the skill is reusable.
+- Professional business reports.
+- Client documentation.
+- Executive summaries.
+- Technical documentation.
+- Meeting reports.
+- Structured business documents.
 
----
+### Microsoft Excel
 
-# Memory & Experience
+- Business dashboards.
+- Financial monitoring.
+- Structured spreadsheets.
+- Commercial tracking.
+- Calculations and formulas.
+- Charts and business indicators.
+- Professional quotations.
 
-NAVA maintains three complementary memory layers.
+### Microsoft PowerPoint
 
-### Skill Memory
+- Business presentations.
+- Technical presentations.
+- Structured slides.
+- Executive briefings.
+- Presentation deliverables.
 
-Validated reusable competencies:
+### Email
 
-```text
-memory/nava_skills.json
-```
+- Message reading and analysis.
+- Intent identification.
+- Action extraction.
+- Professional draft preparation.
+- Attachment handling.
+- Draft verification.
 
-### Learning Memory
+### Calendar
 
-Ongoing learning processes:
+- Appointment reading.
+- Event interpretation.
+- Meeting preparation.
+- Scheduling assistance.
+- Event creation subject to authorization.
+- Verification of saved events.
 
-```text
-memory/nava_learning_events.json
-```
-
-### Execution Memory
-
-Real-world operational history:
-
-```text
-memory/nava_execution_metrics.json
-```
-
-Each mission records:
-
-* success or failure;
-* duration;
-* quality score;
-* generated evidence;
-* confidence before execution;
-* confidence after execution;
-* tools used;
-* capabilities used.
-
-This memory directly influences future decisions.
+These capabilities are progressively validated through real execution tests rather than code-level checks alone.
 
 ---
 
-# Safety Mechanisms
+## 5. Multi-Application Orchestration
 
-### Mail Gate
+One of NAVA's main architectural objectives is to execute complete missions spanning multiple applications.
 
-* no automatic sending;
-* draft mode by default;
-* explicit recipient required;
-* justification required.
+```text
+USER REQUEST
+      ↓
+MISSION UNDERSTANDING
+      ↓
+ACTION COORDINATION
+      ├── Browser
+      ├── Word
+      ├── Excel
+      ├── PowerPoint
+      ├── Email
+      └── Calendar
+      ↓
+DELIVERABLE VERIFICATION
+      ↓
+EXECUTION EVIDENCE
+```
 
-### Calendar Gate
+The system is designed to maintain the original user objective throughout the entire mission.
 
-* no automatic scheduling without justification;
-* valid date/time required;
-* explicit planning need required.
-
-### Learning Gate
-
-* no skill promotion without evidence;
-* no validated learning without testing.
-
-### Verification Gate
-
-* file verification;
-* content verification;
-* window verification;
-* mandatory evidence generation.
+Multi-application reliability and recovery are active validation areas.
 
 ---
 
-# Current Validation Status
+## 6. Intent Preservation — A Critical Architectural Principle
 
-Latest validation protocol:
+A major recent development focus is ensuring that an AI-generated execution plan cannot silently reduce the user's original request.
+
+NAVA distinguishes between:
+
+- **Requested effects:** what the user actually expects.
+- **Proposed execution plan:** how the AI suggests accomplishing the mission.
+- **Executed effects:** what was actually performed.
+- **Remaining effects:** what still needs to be completed.
+
+### Execution Principle
 
 ```text
-Technology Maturity Score: 96.4%
+ORIGINAL USER REQUEST
+         ↓
+REQUESTED EFFECTS
+         ↓
+AI EXECUTION PLAN
+         ↓
+REAL EXECUTION
+         ↓
+ACTUAL EFFECTS
+         ↓
+REMAINING EFFECTS
+         ↓
+FINAL VERIFICATION
 ```
 
-Validated dimensions:
+The AI execution plan is treated as advisory rather than as the ultimate authority over the user's request.
 
-| Area                          | Result |
-| ----------------------------- | ------ |
-| Local autonomy                | 100%   |
-| Agentic capability            | 100%   |
-| Real PC execution             | 100%   |
-| Autonomous learning           | 100%   |
-| Memory & reuse                | 100%   |
-| Product-level interface proof | 100%   |
-| Robustness                    | 88%    |
-| Visual evidence               | 80%    |
-| No mandatory cloud dependency | 100%   |
+This approach is intended to prevent incomplete execution from being incorrectly reported as mission completion.
+
+The early construction and independent validation of requested effects remain important engineering validation points.
 
 ---
 
-# The 6 Levels of Proof
+## 7. Local-First and Hybrid Intelligence
 
-### Level 1 — Real Local Execution
+NAVA is designed around a **Local-First AI architecture**.
 
-* file creation;
-* software opening;
-* verification;
-* screenshots;
-* JSON evidence.
+Local processing can be used for supported operations, including sensitive business information.
 
-### Level 2 — Multi-Software Execution
+When explicitly enabled and permitted, cloud AI services can contribute to tasks that benefit from additional capabilities.
 
-* spreadsheet software;
-* document editor;
-* presentation software;
-* local orchestration.
-
-### Level 3 — Agentic Decision-Making
-
-* open missions;
-* arbitration;
-* confidence scoring;
-* decision tracking.
-
-### Level 4 — Autonomous Learning
-
-* unknown capability detection;
-* minimal testing;
-* controlled promotion.
-
-### Level 5 — Memory & Improvement
-
-* validated skill reuse;
-* execution metrics;
-* measurable improvement.
-
-### Level 6 — Product Interface Proof
-
-Validated path:
-
-```text
-NAVA Interface
-↓
-_execute_command()
-↓
-Main Router
-↓
-Workflow
-↓
-Local Execution
-↓
-Verification
-↓
-Evidence
-```
-
-With:
-
-```text
-source_command = interface
-router_used = NAVA main router
-script_direct = false
-```
-
----
-
-# Difference Between NAVA and a Chatbot
-
-```text
-Chatbot
-↓
-Question
-↓
-Answer
-```
+### Architecture
 
 ```text
 NAVA
-↓
-Objective
-↓
-Understanding
-↓
-Decision
-↓
-Capabilities
-↓
-PC Actions
-↓
-Deliverables
-↓
-Evidence
-↓
-Memory
-↓
-Improvement
+  │
+  ├── Local AI
+  │     └── Ollama
+  │
+  ├── Controlled Cloud AI
+  │     ├── ChatGPT
+  │     ├── Mistral
+  │     └── Gemini
+  │
+  ├── Windows Execution
+  │
+  ├── Verification
+  │
+  └── Evidence and Memory
 ```
 
-NAVA is designed as a local operational AI agent.
+Model selection depends on task requirements, available capabilities, confidentiality constraints, and the configured operating mode.
+
+The objective is not to use cloud AI for every task, but to select appropriate intelligence while maintaining operational control.
 
 ---
 
-# Current Limitations
+## 8. Verification-Driven Execution
 
-Areas under active improvement:
+NAVA follows a fundamental engineering principle:
 
-* long-duration autonomy;
-* 24-hour, 7-day and 30-day endurance tests;
-* stronger visual evidence validation;
-* deeper semantic verification of deliverables;
-* statistical confidence calibration;
-* automatic capability enrichment;
-* better exploitation of rarely used software;
-* advanced voice-mode stabilization.
+**An executed command is not necessarily a successful mission.**
 
----
+A mission should be considered successful only when the expected outcome has been achieved and verified.
 
-# Status
+### Validation Model
 
-NAVA is a proprietary project developed by IA NAVA.
+```text
+REAL USER COMMAND
+       +
+REAL EXECUTION
+       +
+RESULT VERIFICATION
+       +
+EVIDENCE
+       =
+VALIDATED OPERATION
+```
 
-The public repository presents:
+Verification may include:
 
-* project vision;
-* demonstrated capabilities;
-* validation results;
-* public scenarios;
-* roadmap;
-* agentic philosophy.
+- File existence.
+- File structure.
+- Document content.
+- Spreadsheet formulas.
+- Saved application state.
+- Screenshots.
+- Execution logs.
+- Reopened deliverables.
+- Confirmation of persistent changes.
 
-The core engine, advanced adapters, memory systems, detailed logs, self-correction mechanisms and internal architecture remain private.
-
----
-
-# Intellectual Property
-
-NAVA is a proprietary project developed by IA NAVA.
-
-Copyright © 2026 IA NAVA — All Rights Reserved.
-
-No reproduction, modification, redistribution or commercial exploitation of the source code, architecture, internal mechanisms or technical concepts is permitted without prior written authorization.
+This approach places evidence at the center of NAVA's execution model.
 
 ---
 
-# Contact
+## 9. Real Interface Execution
 
-IA NAVA
+A critical validation requirement is that operations must work through the actual NAVA user interface.
 
-https://www.ianava.fr
+Successful execution through a standalone test script is not automatically considered proof of user-facing functionality.
 
-[contact@ianava.fr](mailto:contact@ianava.fr)
+The intended validation chain is:
+
+```text
+NAVA INTERFACE
+      ↓
+MAIN COMMAND ROUTER
+      ↓
+MISSION EXECUTION
+      ↓
+WINDOWS APPLICATION
+      ↓
+REAL RESULT
+      ↓
+VERIFICATION
+      ↓
+EVIDENCE
+```
+
+Recent testing has demonstrated successful calendar-related operations through the interface.
+
+Broader mission coverage continues to be assessed against the formal acceptance protocol.
+
+---
+
+## 10. Memory and Controlled Learning
+
+NAVA incorporates mechanisms designed to preserve useful execution experience.
+
+Its learning architecture covers:
+
+- Capability knowledge.
+- Execution history.
+- Previous outcomes.
+- Performance measurements.
+- Error identification.
+- Reusable validated procedures.
+- Evidence-based skill promotion.
+
+### Learning Principle
+
+```text
+UNKNOWN CAPABILITY
+        ↓
+ANALYSIS
+        ↓
+HYPOTHESIS
+        ↓
+MINIMAL TEST
+        ↓
+MEASUREMENT
+        ↓
+VALIDATION
+        ↓
+REUSABLE MEMORY
+```
+
+A capability should not be considered reliable merely because it has been generated or discovered.
+
+It must demonstrate reproducible behavior supported by evidence.
+
+Autonomous learning and self-repair remain subject to separate validation criteria.
+
+---
+
+## 11. Safety and Human Oversight
+
+NAVA is designed to execute supported, low-risk operations autonomously while retaining human supervision over sensitive actions.
+
+Human authorization may be required before:
+
+- Sending emails.
+- Publishing content.
+- Contacting external recipients.
+- Creating external invitations.
+- Deleting important files.
+- Performing irreversible operations.
+- Making sensitive business changes.
+
+**Operational autonomy must remain compatible with human control.**
+
+---
+
+## 12. Designed for Small and Medium-Sized Businesses
+
+NAVA focuses on practical business operations.
+
+| Business Area | Example Applications |
+|---|---|
+| Administration | Documents, reports, filing |
+| Management | Analysis, priorities, action plans |
+| Sales | Quotations, commercial follow-up |
+| Finance | Dashboards, budgets, indicators |
+| Communication | Presentations, content preparation |
+| Organization | Calendar, meeting preparation |
+| Customer Operations | Client files, documentation |
+| Project Management | Planning and reporting |
+
+The goal is to reduce repetitive computer work and allow professionals to focus on decisions, customers, and operations.
+
+---
+
+## 13. Validation and Engineering Discipline
+
+NAVA is developed against a structured acceptance protocol based on realistic natural-language commands.
+
+The protocol covers:
+
+- Desktop operations.
+- Office productivity.
+- Email and calendar.
+- Browser interactions.
+- Business workflows.
+- Multi-application execution.
+- Decision-making.
+- Evidence verification.
+- Memory and learning.
+- Error recovery.
+- Extended autonomy.
+
+### Engineering Acceptance Criteria
+
+A capability is considered complete only when it demonstrates:
+
+1. Repeatable execution.
+2. Real effects in the target environment.
+3. Verification of expected results.
+4. Traceable supporting evidence.
+
+Passing unit tests alone does not establish operational completion.
+
+---
+
+## 14. Technology Status — October 2026
+
+NAVA is an actively developed agentic AI system with demonstrated local Windows execution capabilities.
+
+Recent engineering work has focused on:
+
+- Preserving the full original user intention.
+- Preventing incomplete AI-generated plans from reducing mission scope.
+- Improving execution continuity.
+- Strengthening application control.
+- Verifying real interface behavior.
+- Improving document production.
+- Establishing traceable execution evidence.
+- Strengthening mission recovery.
+
+### Current Validation Position
+
+| Area | Status |
+|---|---|
+| Local Windows execution | Demonstrated on tested commands |
+| Word deliverable generation | Demonstrated; quality validation ongoing |
+| Excel deliverable generation | Demonstrated; quality validation ongoing |
+| PowerPoint deliverable generation | Demonstrated; broader validation ongoing |
+| Calendar operations | Successful interface scenarios demonstrated |
+| Email preparation | Implemented and tested in supported scenarios |
+| Multi-application autonomy | Further end-to-end validation required |
+| Intent preservation | Engineering improvements under validation |
+| Evidence collection | Operational mechanisms available |
+| Autonomous learning | Partial validation |
+| Autonomous self-repair | Not yet fully demonstrated |
+| Long-duration reliability | Not yet established |
+
+These statuses describe the known development and testing evidence, not an independent certification.
+
+The primary engineering priority is now to stabilize and validate existing capabilities before expanding the product's functional scope.
+
+---
+
+## 15. Development Philosophy
+
+NAVA follows five core principles.
+
+**1. Real Execution Before Claims**
+
+A capability matters only when it produces the expected result in the real environment.
+
+**2. Evidence Before Success**
+
+An operation must be verified before being declared successful.
+
+**3. User Intent Before AI Plans**
+
+The original user objective remains the reference throughout execution.
+
+**4. Reuse Before Complexity**
+
+Existing capabilities should be reused whenever possible.
+
+**5. Learning Before Hardcoded Workarounds**
+
+Failures should lead to diagnosis, reproducible investigation, and durable improvements rather than scenario-specific shortcuts.
+
+---
+
+## 16. Public Architecture Overview
+
+```text
+NAVA
+│
+├── Understanding Layer
+│
+├── Mission Framing
+│
+├── Intent Preservation
+│
+├── Decision Engine
+│
+├── Capability Selection
+│
+├── Execution Runtime
+│
+├── Windows Interaction
+│
+├── Result Verification
+│
+├── Evidence Management
+│
+├── Memory
+│
+└── Controlled Learning
+```
+
+This diagram provides a conceptual overview only.
+
+It does not disclose NAVA's proprietary implementation.
+
+---
+
+## 17. Proprietary Technology
+
+NAVA is a proprietary research and development project created by IA NAVA.
+
+The public presentation does not disclose:
+
+- Internal decision algorithms.
+- Complete source code.
+- Proprietary execution mechanisms.
+- Advanced application adapters.
+- Detailed self-repair strategies.
+- Private memory structures.
+- Sensitive logs and execution data.
+
+This public documentation is intended to communicate the project's objectives, demonstrated capabilities, engineering principles, and development progress.
+
+---
+
+## 18. Long-Term Vision
+
+NAVA explores a future where users no longer need to manually coordinate every software operation.
+
+Instead of asking:
+
+*How do I perform this task on my computer?*
+
+Users can ask:
+
+**Can you accomplish this objective and show me the result?**
+
+```text
+HUMAN INTENT
+      ↓
+AGENTIC INTELLIGENCE
+      ↓
+REAL COMPUTER EXECUTION
+      ↓
+VERIFIED OUTCOME
+      ↓
+EVIDENCE
+```
+
+**NAVA — From Human Intent to Verified Execution.**
+
+---
+
+## About IA NAVA
+
+NAVA is developed by **IA NAVA**, an AI consulting and development business based in Occitanie, France.
+
+Website: https://www.ianava.fr
+
+Email: contact@ianava.fr
+
+---
+
+## Intellectual Property
+
+Copyright © 2026 IA NAVA. All rights reserved.
+
+NAVA is proprietary technology. No permission is granted to reproduce, modify, distribute, or commercially exploit its source code or proprietary implementation without prior written authorization from IA NAVA.
