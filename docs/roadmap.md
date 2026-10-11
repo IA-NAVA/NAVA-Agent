@@ -1,21 +1,21 @@
-# Roadmap publique de NAVA
+[roadmap.md](https://github.com/user-attachments/files/33300738/roadmap.md)
+# NAVA — Stabilisation / Stabilization roadmap
 
-## Phase actuelle
+**11 octobre / October 11, 2026 — Functional freeze / Gel fonctionnel**
 
-- Stabilisation du pipeline runtime
-- Amélioration des workflows multi-applications
-- Correction des cas limites Excel, Word PDF et Thunderbird
-- Renforcement de la vérification d’exécution
+Le projet est en **stabilisation des commandes existantes** : aucune nouvelle fonctionnalité, nouvelle branche ou nouvelle architecture sans nécessité démontrée.
 
-## Prochaines étapes
+The project focuses on **stabilizing existing commands**: no new features, branches or architecture without proven necessity.
 
-- Mode vocal premium en continu
-- Meilleure interruption vocale utilisateur
-- Amélioration de l’exécution de commandes longues
-- Stabilisation de l’export PDF Word
-- Optimisation du routage Excel → Thunderbird
-- Démonstrations publiques contrôlées
+1. Préserver l'intention et tous les effets demandés avant le plan LLM / Preserve requested user outcomes before LLM planning.
+2. Vérifier la conservation réelle du contexte Chrome et de l'onglet actif / Prove browser tab context retention in the real UI.
+3. Achever le chemin Agenda → devis Excel déjà vérifié → pièce jointe → brouillon Thunderbird sans doublon / Complete the existing business workflow without duplicating events or files.
+4. Reprendre les commandes Office, Cloud et Social non certifiées / Revalidate unproven existing command families.
+5. Valider les mécanismes de reprise et d'auto-réparation avec preuves réelles / Prove runtime recovery and self-repair in real executions.
+6. Déclarer une version terminée quand le noyau critique passe plusieurs fois selon le protocole / Declare a scoped completed release after repeated acceptance passes.
 
-## Vision
+**Règle :** ne jamais assouplir un garde-fou pour satisfaire un ancien test incohérent ; diagnostiquer et documenter la divergence.
 
-Faire de NAVA un agent IA local capable de piloter un environnement Windows réel à partir d’instructions naturelles, sans exposer le cœur propriétaire du moteur.
+**Rule:** never weaken a security guard to force an outdated test to pass; investigate and document the contract mismatch.
+
+[Detailed evidence status](status-october-2026.md)
