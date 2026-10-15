@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/33300728/README.md)
 # NAVA — Neural Agentic Virtual Agent
 
 **From human intent to real, verifiable Windows execution.**

@@ -1,4 +1,3 @@
-[roadmap.md](https://github.com/user-attachments/files/33300738/roadmap.md)
 # NAVA — Stabilisation / Stabilization roadmap
 
 **11 octobre / October 11, 2026 — Functional freeze / Gel fonctionnel**

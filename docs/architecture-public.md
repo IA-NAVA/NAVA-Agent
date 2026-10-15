@@ -1,4 +1,3 @@
-[architecture-public.md](https://github.com/user-attachments/files/33300714/architecture-public.md)
 # NAVA — Architecture publique / Public architecture
 
 ```text
