@@ -1,9 +1,8 @@
-[README-FR.md](https://github.com/user-attachments/files/33300720/README-FR.md)
 # NAVA — Neural Agentic Virtual Agent
 
 **De l'intention humaine à l'exécution réelle et vérifiable sur Windows.**
 
-[Français](README-FR.md) · [English](README.md) · [État technique](docs/status-october-2026.md) · [Feuille de route](docs/roadmap.md)
+[Français](README-FR.md) · [English](README.md) · [État technique](docs/status-october-2026.md) · [Feuille de route](docs/roadmap.md) · [Partenariat](docs/partnership.md)
 
 NAVA est un projet d'**agent IA local et hybride**, développé par **IA NAVA en Occitanie**. Il vise à comprendre une commande naturelle, piloter des logiciels Windows, produire des livrables natifs, vérifier les résultats et conserver des preuves d'exécution. Son objectif n'est pas simplement de répondre : **il doit agir, contrôler et démontrer le résultat**.
 
@@ -75,6 +74,7 @@ Ce dépôt constitue une **vitrine publique du projet**, pas son code source pri
 - [Bilan technique — octobre 2026](docs/status-october-2026.md)
 - [Architecture publique](docs/architecture-public.md)
 - [Feuille de route de stabilisation](docs/roadmap.md)
+- [Partenariat, investissement et acquisition](docs/partnership.md)
 - [English presentation](README.md)
 
 **IA NAVA** · [ianava.fr](https://www.ianava.fr) · [contact@ianava.fr](mailto:contact@ianava.fr)
