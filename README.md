@@ -3,7 +3,7 @@
 
 **From human intent to real, verifiable Windows execution.**
 
-[English](README.md) · [Français](README-FR.md) · [Technology status](docs/status-october-2026.md) · [Stabilization roadmap](docs/roadmap.md)
+[English](README.md) · [Français](README-FR.md) · [Technology status](docs/status-october-2026.md) · [Stabilization roadmap](docs/roadmap.md) · [Partnership](docs/partnership.md)
 
 NAVA is a **local-first, hybrid agentic AI project** developed by **IA NAVA in Occitanie, France**. It aims to understand natural-language requests, use Windows software to perform tasks, produce native files, check actual outcomes and preserve evidence. It is more than a text-generating assistant: the objective is **computer-based execution with verification**.
 
@@ -75,6 +75,7 @@ This repository is a **public project presentation**, not the full private sourc
 - [Technology status — October 2026](docs/status-october-2026.md)
 - [Public architecture](docs/architecture-public.md)
 - [Current stabilization roadmap](docs/roadmap.md)
+- [Partnership, investment and acquisition](docs/partnership.md)
 - [French presentation](README-FR.md)
 
 **IA NAVA** · [ianava.fr](https://www.ianava.fr) · [contact@ianava.fr](mailto:contact@ianava.fr)
