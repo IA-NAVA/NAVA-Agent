@@ -22,6 +22,26 @@ L'architecture conceptuelle prévoit une IA locale prioritaire, une assistance c
 
 The conceptual design is local-first, with optional controlled cloud assistance, real software execution and human approval for sensitive operations.
 
+## NAVA Mail — conceptual workflow / Flux public
+
+```text
+Incoming professional email / E-mail reçu
+                   ↓
+Understand requests and attachments / Comprendre les demandes
+                   ↓
+Plan multiple actions / Planifier plusieurs actions
+                   ↓
+Produce business outputs / Produire les livrables
+                   ↓
+Verify outcomes / Vérifier les résultats
+                   ↓
+Draft or authorized Auto reply / Brouillon ou réponse Auto autorisée
+```
+
+Two modes are described: **supervised** (approval for sensitive external operations) and **Auto** (only specifically pre-authorized, verified sending; unresolved cases remain pending). The architecture also involves authorized mail/calendar integrations and business-file production, without disclosing proprietary internals.
+
+Ce schéma décrit le fonctionnement présenté du démonstrateur NAVA Mail, pas une certification de bout en bout. Les frontières de confidentialité restent applicables.
+
 ## Functional contract
 
 NAVA is designed around a closed mission loop:
