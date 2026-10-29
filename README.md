@@ -54,6 +54,24 @@ NAVA has demonstrated individual Windows and office operations, including recent
 
 See the [October 2026 evidence summary](docs/status-october-2026.md) for a clear separation between observed results, passing technical tests and remaining validation work.
 
+## NAVA Mail — professional email automation
+
+**Functional demonstrator undergoing end-to-end validation (October 29, 2026).**
+
+NAVA Mail is the email-oriented workflow of NAVA. From a professional message and its context, it aims to identify multiple requests, prepare a coordinated action plan, generate appropriate business deliverables and compose a response with verified attachments.
+
+- **Business outputs:** summaries, Word / Excel / PowerPoint / PDF deliverables where supported, quotations without invented prices, appointment preparation and correspondence.
+- **Traceable execution:** each requested action is marked completed, pending, blocked or requiring correction, based on actual outcomes.
+- **Supervised mode:** sensitive external actions are submitted for the appropriate human approval.
+- **Auto mode:** the demonstrator describes response sending without individual approval **only within a specifically authorized scope**, after all completeness and verification checks pass. This capability is **not yet certified end-to-end**; blocked, uncertain or unauthorized actions are held for review.
+- **Privacy:** processing of email and calendar contents follows the project's local-data restrictions; external services require authorization.
+
+**Reported testing snapshot:** 4,533 PASS, 2 FAIL relating to calendar formatting, and 31 passing subtests. Subsequent corrections were reported, but a new full passing campaign has not been verified; these figures are not proof of production readiness.
+
+The next acceptance stage covers a real multitask email through the actual interface in both modes, file and attachment verification, calendar invitees/Meet details and complete regression testing.
+
+[Read the public NAVA Mail overview](docs/nava-mail.md).
+
 ## Engineering and acceptance principles
 
 1. **No new features during stabilization:** prioritize reliability of existing commands.
