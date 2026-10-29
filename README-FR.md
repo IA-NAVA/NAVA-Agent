@@ -54,6 +54,24 @@ Plusieurs opérations Windows et bureautiques ont été démontrées. Des scéna
 
 Voir le [bilan technique d'octobre 2026](docs/status-october-2026.md), qui sépare les effets observés des simples succès de tests.
 
+## NAVA Mail — assistant de traitement des e-mails professionnels
+
+**Démonstrateur fonctionnel en cours de certification de bout en bout (29 octobre 2026).**
+
+NAVA Mail vise à transformer un e-mail professionnel en plusieurs tâches coordonnées : comprendre le message et son contexte, identifier les demandes, préparer un plan multi-actions, générer les livrables pertinents puis préparer une réponse accompagnée des pièces jointes vérifiées.
+
+- **Livrables métier :** synthèses, documents Word / Excel / PowerPoint / PDF selon les scénarios pris en charge, devis sans prix inventés, préparation de rendez-vous et correspondance.
+- **Traçabilité :** chaque action est classée réalisée, en attente, bloquée ou à corriger selon ses effets réels.
+- **Mode supervisé :** validation humaine appropriée avant les opérations externes sensibles.
+- **Mode Auto :** le démonstrateur prévoit l'envoi sans validation individuelle **uniquement dans un périmètre expressément autorisé**, après contrôle complet. L'envoi automatique n'est **pas encore certifié de bout en bout** ; les opérations incertaines, bloquées ou non autorisées restent à valider.
+- **Confidentialité :** respect du traitement local des données mail et agenda ; recours aux services externes sous autorisation.
+
+**Dernier bilan de tests communiqué :** 4 533 PASS, 2 FAIL liés au format Agenda et 31 sous-tests PASS. Des corrections ultérieures ont été signalées, sans nouveau bilan complet vérifié ; ces chiffres ne démontrent pas une mise en production certifiée.
+
+La validation restante concerne le parcours réel depuis l'interface en modes Auto et supervisé, les livrables et pièces jointes, les invités et liens Meet et la non-régression complète.
+
+[Présentation publique détaillée de NAVA Mail](docs/nava-mail.md).
+
 ## Règles de développement
 
 1. **Gel fonctionnel :** aucune nouvelle fonctionnalité avant stabilisation du noyau.
