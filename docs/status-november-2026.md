@@ -28,3 +28,9 @@ Résumé public expurgé d'un audit interne remis le 3 novembre 2026. Aucun chem
 [README français](../README-FR.md) · [English README](../README.md) · [NAVA Mail](nava-mail.md) · [NAVA Agenda](nava-agenda.md) · [Historique octobre 2026](status-october-2026.md)
 
 © 2026 IA NAVA — Tous droits réservés.
+
+## Complément — revue des preuves réelles archivées / Additional archived-evidence review
+
+La revue hors ligne d'une archive distincte établit l'existence de plusieurs chaînes de production Mail et Agenda, au-delà de la seule lecture et planification : 9 dossiers Mail (8 avec livrables), 11 dossiers Agenda, 18 fichiers Office structurellement valides, 9 pièces jointes MIME identiques aux livrables, 2 reçus de changement Agenda et 5 reçus SMTP Agenda. Le développeur affirme que les envois et créations de rendez-vous ont effectivement été exécutés. Les effets externes ne sont pas recontrôlés en direct dans cet audit et des statuts de suivi restent à réconcilier. Cette revue **complète**, mais ne remplace pas, le constat `BLOCKED` sur une campagne de test d'un autre checkout. [Revue détaillée](evidence-review-november-2026.md).
+
+The archive demonstrates concrete document production and recorded SMTP/calendar operations. Developer-reported sending and event creation are noted separately from independent remote-system verification.
