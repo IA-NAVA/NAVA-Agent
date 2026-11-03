@@ -2,7 +2,7 @@
 
 **From human intent to real, verifiable Windows execution.**
 
-[English](README.md) · [Français](README-FR.md) · [Technology status](docs/status-october-2026.md) · [Stabilization roadmap](docs/roadmap.md) · [Partnership](docs/partnership.md)
+[English](README.md) · [Français](README-FR.md) · [Technology status — November 2026](docs/status-november-2026.md) · [Stabilization roadmap](docs/roadmap.md) · [Partnership](docs/partnership.md)
 
 NAVA is a **local-first, hybrid agentic AI project** developed by **IA NAVA in Occitanie, France**. It aims to understand natural-language requests, use Windows software to perform tasks, produce native files, check actual outcomes and preserve evidence. It is more than a text-generating assistant: the objective is **computer-based execution with verification**.
 
@@ -65,7 +65,7 @@ NAVA is developed for the user's Windows environment, with local models and appl
 
 NAVA has demonstrated individual Windows and office operations, including recent calendar-related tests through its interface and successful real minimization/restoration of the NAVA window. Native Excel quotations have also been observed and verified in specific tests. However, **full multi-application business completion, Chrome tab-context recovery, all email/attachment scenarios and autonomous self-repair are not yet comprehensively certified**.
 
-See the [October 2026 evidence summary](docs/status-october-2026.md) for a clear separation between observed results, passing technical tests and remaining validation work.
+See the [November 3, 2026 technical status](docs/status-november-2026.md): 126 targeted Core/Mail tests passed; an Agenda test campaign was blocked by a Windows COM exception. Findings are scoped to the audited checkout and distinguish local test success from real external effects.
 
 ## NAVA Mail — professional email automation
 
@@ -79,7 +79,7 @@ NAVA Mail is the email-oriented workflow of NAVA. From a professional message an
 - **Auto mode:** the demonstrator describes response sending without individual approval **only within a specifically authorized scope**, after all completeness and verification checks pass. This capability is **not yet certified end-to-end**; blocked, uncertain or unauthorized actions are held for review.
 - **Privacy:** processing of email and calendar contents follows the project's local-data restrictions; external services require authorization.
 
-**Reported testing snapshot:** 4,533 PASS, 2 FAIL relating to calendar formatting, and 31 passing subtests. Subsequent corrections were reported, but a new full passing campaign has not been verified; these figures are not proof of production readiness.
+**Later archived October 28 results:** 4,597 passing tests, 1 warning and 31 passing subtests, as reported by the November 3 audit. **Fresh targeted November 3 results:** 126 Core/Mail tests passed. Several real missions remain incomplete, and SMTP sending has not been demonstrated in this audit; these figures do not establish production readiness.
 
 The next acceptance stage covers a real multitask email through the actual interface in both modes, file and attachment verification, calendar invitees/Meet details and complete regression testing.
 
@@ -102,7 +102,8 @@ The target is practical delegation of recurring administrative tasks: meeting pr
 
 This repository is a **public project presentation**, not the full private source repository or a claim of independent certification. Detailed orchestration, proprietary code, memory structures, credentials, business records and sensitive execution logs are not published.
 
-- [Technology status — October 2026](docs/status-october-2026.md)
+- [Technology status — November 2026](docs/status-november-2026.md)
+- [Historical status — October 2026](docs/status-october-2026.md)
 - [Public architecture](docs/architecture-public.md)
 - [Current stabilization roadmap](docs/roadmap.md)
 - [Partnership, investment and acquisition](docs/partnership.md)
