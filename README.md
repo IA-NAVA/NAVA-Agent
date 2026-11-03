@@ -10,9 +10,9 @@ NAVA is a **local-first, hybrid agentic AI project** developed by **IA NAVA in O
 
 | Component | Purpose | Current scope |
 | --- | --- | --- |
-| **NAVA Core** | Original general-purpose Windows agent: understand an objective, coordinate software actions, observe outcomes and retain execution evidence. | Proprietary engine, undergoing scenario-based stabilization. |
-| **NAVA Mail** | Convert professional incoming email into actionable workflows: interpret requests, prepare documents and quotations, draft responses and manage verified attachments. | Functional demonstrator; complete end-to-end and authorized Auto-send certification pending. |
-| **NAVA Agenda** | Turn calendar appointments into actionable work: read events, interpret descriptions, prepare Word/Excel/PowerPoint/PDF documents or quotations, draft associated messages and create or update events. | Evolving demonstrator; multi-application execution and external actions require verification and appropriate approval. |
+| **`NAVA Core`** | Original general-purpose Windows agent: understand an objective, coordinate software actions, observe outcomes and retain execution evidence. | Proprietary engine, undergoing scenario-based stabilization. |
+| **`NAVA Mail`** | Convert professional incoming email into actionable workflows: interpret requests, prepare documents and quotations, draft responses and manage verified attachments. | Functional demonstrator; complete end-to-end and authorized Auto-send certification pending. |
+| **`NAVA Agenda`** | Turn calendar appointments into actionable work: read events, interpret descriptions, prepare Word/Excel/PowerPoint/PDF documents or quotations, draft associated messages and create or update events. | Evolving demonstrator; multi-application execution and external actions require verification and appropriate approval. |
 
 NAVA Mail and NAVA Agenda are specialized applications within the **original NAVA Core agentic vision**, not replacements for it. Their interfaces and connection configurations may be independent while using the same outcome-oriented engineering principles. Described functions are targets or scenario-specific demonstrations, **not a claim that every workflow is production-certified**.
 
