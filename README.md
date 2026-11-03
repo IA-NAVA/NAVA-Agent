@@ -6,6 +6,19 @@
 
 NAVA is a **local-first, hybrid agentic AI project** developed by **IA NAVA in Occitanie, France**. It aims to understand natural-language requests, use Windows software to perform tasks, produce native files, check actual outcomes and preserve evidence. It is more than a text-generating assistant: the objective is **computer-based execution with verification**.
 
+## The NAVA ecosystem — one agentic vision, three complementary components
+
+| Component | Purpose | Current scope |
+| --- | --- | --- |
+| **NAVA Core** | Original general-purpose Windows agent: understand an objective, coordinate software actions, observe outcomes and retain execution evidence. | Proprietary engine, undergoing scenario-based stabilization. |
+| **NAVA Mail** | Convert professional incoming email into actionable workflows: interpret requests, prepare documents and quotations, draft responses and manage verified attachments. | Functional demonstrator; complete end-to-end and authorized Auto-send certification pending. |
+| **NAVA Agenda** | Turn calendar appointments into actionable work: read events, interpret descriptions, prepare Word/Excel/PowerPoint/PDF documents or quotations, draft associated messages and create or update events. | Evolving demonstrator; multi-application execution and external actions require verification and appropriate approval. |
+
+NAVA Mail and NAVA Agenda are specialized applications within the **original NAVA Core agentic vision**, not replacements for it. Their interfaces and connection configurations may be independent while using the same outcome-oriented engineering principles. Described functions are targets or scenario-specific demonstrations, **not a claim that every workflow is production-certified**.
+
+[Explore NAVA Agenda](docs/nava-agenda.md) · [Explore NAVA Mail](docs/nava-mail.md) · [Public architecture](docs/architecture-public.md)
+
+
 ## What NAVA is built to do
 
 - **Understand objectives:** interpret requests formulated in ordinary language and identify the expected outcomes.
