@@ -53,3 +53,24 @@ The loop is deliberately outcome-oriented. It should preserve unfinished outcome
 **Important :** ce schéma décrit le fonctionnement recherché et ne prouve pas que toutes les missions sont certifiées. Aucune information détaillée sur le moteur propriétaire, ses adaptateurs, sa mémoire ou ses algorithmes de réparation n'est publiée.
 
 **Important:** This is an intended operating contract, not evidence that every possible mission is certified. No proprietary internal implementation is disclosed.
+
+## Three application scopes / Trois périmètres
+
+**NAVA Core** remains the original general-purpose Windows execution agent. **NAVA Mail** translates professional email requests into supervised, verifiable workflows. **NAVA Agenda** translates selected calendar event descriptions into supervised tasks and outputs. They share an outcome-verification philosophy but may have distinct interfaces, accounts and configurations. This is a functional view, not disclosure of the internal implementation.
+
+**NAVA Agenda — conceptual flow / Flux conceptuel :**
+
+```text
+Authorized calendar → Read events → Select meeting → Execute this meeting
+                                      ↓
+                             Interpret instructions
+                                      ↓
+                         Prepare permitted tasks/files
+                                      ↓
+                        Verify results and record evidence
+                                      ↓
+                   Draft email / approved external action
+```
+
+The full cross-application flow is still under end-to-end validation. [NAVA Agenda overview](nava-agenda.md).
+
