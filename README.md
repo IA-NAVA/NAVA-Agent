@@ -112,3 +112,7 @@ This repository is a **public project presentation**, not the full private sourc
 **IA NAVA** · [ianava.fr](https://www.ianava.fr) · [contact@ianava.fr](mailto:contact@ianava.fr)
 
 © 2026 IA NAVA. Proprietary project; all rights reserved.
+
+## Recent execution evidence — November 3, 2026
+
+An independent offline archive review confirmed **eight Mail mission folders with deliverables and drafts**, **nine byte-matched MIME attachments**, and **eleven Agenda execution folders** with Word/Excel/PowerPoint outputs, drafts and SMTP/calendar receipts. **The developer confirms that sending and calendar event creation were executed.** Independent live inbox delivery and remote calendar persistence were not checked by the archive reviewer. One Mail mission remains incomplete and some tracking statuses need reconciliation. [Read the scoped evidence review](docs/evidence-review-november-2026.md).
