@@ -2,7 +2,7 @@
 
 **De l'intention humaine à l'exécution réelle et vérifiable sur Windows.**
 
-[Français](README-FR.md) · [English](README.md) · [État technique](docs/status-october-2026.md) · [Feuille de route](docs/roadmap.md) · [Partenariat](docs/partnership.md)
+[Français](README-FR.md) · [English](README.md) · [État technique — novembre 2026](docs/status-november-2026.md) · [Feuille de route](docs/roadmap.md) · [Partenariat](docs/partnership.md)
 
 NAVA est un projet d'**agent IA local et hybride**, développé par **IA NAVA en Occitanie**. Il vise à comprendre une commande naturelle, piloter des logiciels Windows, produire des livrables natifs, vérifier les résultats et conserver des preuves d'exécution. Son objectif n'est pas simplement de répondre : **il doit agir, contrôler et démontrer le résultat**.
 
@@ -65,7 +65,7 @@ NAVA privilégie les logiciels et modèles disponibles sur le PC Windows. Un ser
 
 Plusieurs opérations Windows et bureautiques ont été démontrées. Des scénarios agenda ont réussi via l'interface. La minimisation et restauration réelles de la fenêtre NAVA ont aussi été vérifiées ; un devis Excel a fait l'objet de contrôles concrets. En revanche, **l'enchaînement métier multi-applications complet, la récupération du contexte Chrome, certains brouillons avec pièces jointes et l'auto-réparation autonome restent à certifier**.
 
-Voir le [bilan technique d'octobre 2026](docs/status-october-2026.md), qui sépare les effets observés des simples succès de tests.
+Voir le [bilan technique du 3 novembre 2026](docs/status-november-2026.md), qui sépare les tests contractuels des effets réels. L'audit ciblé signale 126 tests Core/Mail réussis et une campagne Agenda bloquée par une exception Windows COM ; sa portée est limitée au checkout audité.
 
 ## NAVA Mail — assistant de traitement des e-mails professionnels
 
@@ -79,7 +79,7 @@ NAVA Mail vise à transformer un e-mail professionnel en plusieurs tâches coord
 - **Mode Auto :** le démonstrateur prévoit l'envoi sans validation individuelle **uniquement dans un périmètre expressément autorisé**, après contrôle complet. L'envoi automatique n'est **pas encore certifié de bout en bout** ; les opérations incertaines, bloquées ou non autorisées restent à valider.
 - **Confidentialité :** respect du traitement local des données mail et agenda ; recours aux services externes sous autorisation.
 
-**Dernier bilan de tests communiqué :** 4 533 PASS, 2 FAIL liés au format Agenda et 31 sous-tests PASS. Des corrections ultérieures ont été signalées, sans nouveau bilan complet vérifié ; ces chiffres ne démontrent pas une mise en production certifiée.
+**Bilan historique plus récent (28 octobre) :** 4 597 tests réussis, 1 avertissement, 31 sous-tests réussis, selon le rapport local consulté le 3 novembre. **Audit ciblé du 3 novembre :** 126 tests Core/Mail réussis ; plusieurs missions réelles restent incomplètes et l'envoi SMTP n'a pas été prouvé. Ces résultats ne démontrent pas une mise en production certifiée.
 
 La validation restante concerne le parcours réel depuis l'interface en modes Auto et supervisé, les livrables et pièces jointes, les invités et liens Meet et la non-régression complète.
 
@@ -102,7 +102,8 @@ NAVA vise la préparation des rendez-vous, dossiers clients, devis, rapports, ta
 
 Ce dépôt constitue une **vitrine publique du projet**, pas son code source privé complet ni une certification indépendante. Le moteur interne, les méthodes propriétaires, les données clients, clés, journaux sensibles et éléments de sécurité ne sont pas publiés.
 
-- [Bilan technique — octobre 2026](docs/status-october-2026.md)
+- [Bilan technique — novembre 2026](docs/status-november-2026.md)
+- [Historique technique — octobre 2026](docs/status-october-2026.md)
 - [Architecture publique](docs/architecture-public.md)
 - [Feuille de route de stabilisation](docs/roadmap.md)
 - [Partenariat, investissement et acquisition](docs/partnership.md)
