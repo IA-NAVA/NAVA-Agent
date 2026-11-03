@@ -36,3 +36,7 @@ This public document does not disclose proprietary engine code, credentials, tok
 L'audit du checkout `feature/nava-agenda` confirme des tests de lecture et de planification locale. Il indique que le raccordement effectif des boutons « Créer / modifier / Exécuter ce RDV » à une mission multi-application complète **n'est pas prouvé dans cette version**. La campagne ciblée a été interrompue par une exception Windows COM pendant un test de devis : statut **BLOCKED**, et non PASS global. Ces résultats ne permettent pas d'évaluer une autre version locale non auditée.
 
 The audited checkout supports calendar reading and local planning tests, but GUI-triggered external effects were not established. A quotation test was blocked by a Windows COM exception. [November 2026 technical status](status-november-2026.md).
+
+## Exécutions archivées — 3 novembre 2026
+
+La revue de 11 missions Agenda archivées confirme des livrables Word, Excel et PowerPoint, des brouillons, deux reçus de changement de calendrier avec identifiants d'événements et cinq reçus SMTP. Le développeur confirme que la création des rendez-vous et les envois fonctionnent dans sa version utilisée. Cette revue étant hors ligne, chaque effet externe n'a pas été revérifié en direct et la campagne `BLOCKED` d'un checkout différent demeure documentée. [Revue des preuves](evidence-review-november-2026.md).
