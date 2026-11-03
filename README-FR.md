@@ -112,3 +112,7 @@ Ce dépôt constitue une **vitrine publique du projet**, pas son code source pri
 **IA NAVA** · [ianava.fr](https://www.ianava.fr) · [contact@ianava.fr](mailto:contact@ianava.fr)
 
 © 2026 IA NAVA — Tous droits réservés. Projet propriétaire.
+
+## Preuves d'exécution récentes — 3 novembre 2026
+
+La revue indépendante de l'archive de démonstration confirme **8 dossiers Mail avec livrables et brouillons**, **9 pièces jointes MIME identiques aux fichiers produits**, et **11 dossiers Agenda** contenant des documents Word/Excel/PowerPoint, brouillons et reçus de changement d'événements ou SMTP. **Le développeur confirme que les envois et créations de rendez-vous ont été exécutés.** L'audit hors ligne n'a pas vérifié indépendamment la livraison en boîte de réception ni tous les événements distants. Une mission Mail reste incomplète et des incohérences de suivi sont à corriger. [Lire la revue des preuves](docs/evidence-review-november-2026.md).
