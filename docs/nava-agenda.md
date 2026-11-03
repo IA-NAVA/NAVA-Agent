@@ -30,3 +30,9 @@ This public document does not disclose proprietary engine code, credentials, tok
 [Public README](../README.md) · [README français](../README-FR.md) · [NAVA Mail](nava-mail.md) · [Architecture](architecture-public.md)
 
 © 2026 IA NAVA — Tous droits réservés / All rights reserved.
+
+## Qualification complémentaire — 3 novembre 2026 / Additional qualification
+
+L'audit du checkout `feature/nava-agenda` confirme des tests de lecture et de planification locale. Il indique que le raccordement effectif des boutons « Créer / modifier / Exécuter ce RDV » à une mission multi-application complète **n'est pas prouvé dans cette version**. La campagne ciblée a été interrompue par une exception Windows COM pendant un test de devis : statut **BLOCKED**, et non PASS global. Ces résultats ne permettent pas d'évaluer une autre version locale non auditée.
+
+The audited checkout supports calendar reading and local planning tests, but GUI-triggered external effects were not established. A quotation test was blocked by a Windows COM exception. [November 2026 technical status](status-november-2026.md).
