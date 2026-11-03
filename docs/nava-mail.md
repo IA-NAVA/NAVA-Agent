@@ -42,3 +42,7 @@ IA NAVA · https://www.ianava.fr · contact@ianava.fr
 Le rapport local du 28 octobre cité par l'audit du 3 novembre indique **4 597 tests réussis, 1 avertissement et 31 sous-tests réussis**. La campagne ciblée Core/Mail du 3 novembre compte **126 tests réussis**. Plusieurs missions réelles archivées restent cependant **INCOMPLETE** et l'envoi SMTP réel n'est pas prouvé dans ce périmètre. Les chiffres du 29 octobre ci-dessus sont conservés comme historique, pas comme dernier bilan.
 
 The November 3 audit reports 126 passing targeted Core/Mail tests and newer archived October 28 figures (4,597 passed, one warning, 31 passing subtests). Full real GUI/SMTP completion remains unverified. [Current qualification](status-november-2026.md).
+
+## Preuves complémentaires — 3 novembre 2026
+
+Dans une archive de missions distincte, 8 dossiers Mail sur 9 comprennent des livrables et brouillons ; 9 pièces jointes MIME sont identiques aux fichiers Office produits. Le développeur confirme que les envois ont été effectués. L'audit hors ligne ne vérifie pas indépendamment la réception ; certains suivis `WAITING_APPROVAL` restent incohérents avec des mentions `SMTP_ACCEPTED`. Une mission est `INCOMPLETE`. [Revue des preuves](evidence-review-november-2026.md).
