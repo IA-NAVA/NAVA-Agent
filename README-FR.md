@@ -10,9 +10,9 @@ NAVA est un projet d'**agent IA local et hybride**, développé par **IA NAVA en
 
 | Composante | Rôle | État |
 | --- | --- | --- |
-| **NAVA Core** | Agent Windows généraliste initial : comprendre une demande, coordonner des logiciels, observer et prouver les résultats. | Moteur propriétaire en stabilisation selon les scénarios. |
-| **NAVA Mail** | Transformer les e-mails professionnels en tâches : analyser, préparer les documents et devis, composer les réponses avec pièces jointes vérifiées. | Démonstrateur fonctionnel ; validation complète et envoi Auto autorisé encore à certifier. |
-| **NAVA Agenda** | Transformer les rendez-vous en actions : lire les événements, comprendre leurs descriptions, préparer Word/Excel/PowerPoint/PDF ou devis, brouillons d'e-mails, créer ou modifier des rendez-vous. | Démonstrateur en évolution ; les enchaînements multi-applications et actions externes exigent vérification et autorisations appropriées. |
+| **`NAVA Core`** | Agent Windows généraliste initial : comprendre une demande, coordonner des logiciels, observer et prouver les résultats. | Moteur propriétaire en stabilisation selon les scénarios. |
+| **`NAVA Mail`** | Transformer les e-mails professionnels en tâches : analyser, préparer les documents et devis, composer les réponses avec pièces jointes vérifiées. | Démonstrateur fonctionnel ; validation complète et envoi Auto autorisé encore à certifier. |
+| **`NAVA Agenda`** | Transformer les rendez-vous en actions : lire les événements, comprendre leurs descriptions, préparer Word/Excel/PowerPoint/PDF ou devis, brouillons d'e-mails, créer ou modifier des rendez-vous. | Démonstrateur en évolution ; les enchaînements multi-applications et actions externes exigent vérification et autorisations appropriées. |
 
 NAVA Mail et NAVA Agenda sont des **applications spécialisées de la vision initiale NAVA Core**, et non son remplacement. Elles peuvent avoir des interfaces et configurations de connexion indépendantes tout en reprenant les principes d'exécution vérifiable. Les capacités décrites sont des objectifs ou des démonstrations limitées à certains scénarios, **pas une certification de toutes les fonctions en production**.
 
