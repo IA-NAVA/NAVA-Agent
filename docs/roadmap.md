@@ -18,3 +18,14 @@ The project focuses on **stabilizing existing commands**: no new features, branc
 **Rule:** never weaken a security guard to force an outdated test to pass; investigate and document the contract mismatch.
 
 [Detailed evidence status](status-october-2026.md)
+
+## Mise à jour du périmètre — 3 novembre 2026 / Scope update
+
+Le gel fonctionnel du noyau initial reste un objectif de stabilisation ; les développements NAVA Mail et NAVA Agenda sont suivis comme applications spécialisées, sans déclarer le NAVA Core terminé ou remplacé.
+
+Priorités de validation : (1) conserver la suite de tests de l'agent Windows généraliste ; (2) certifier les scénarios Mail depuis l'interface réelle, y compris les pièces jointes et autorisations ; (3) certifier les scénarios Agenda depuis « Exécuter ce RDV » jusqu'aux documents, brouillons et modifications d'événements, avec preuves et sans doublons ; (4) contrôler les régressions entre branches avant toute fusion.
+
+Core stabilization remains an active track. Mail and Agenda are separate application tracks; their UI-to-output workflows require reproducible evidence and approval gates.
+
+[Agenda](nava-agenda.md) · [Mail](nava-mail.md)
+
