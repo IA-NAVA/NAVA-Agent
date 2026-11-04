@@ -1,120 +1,83 @@
-# NAVA — Neural Agentic Virtual Agent
+# NAVA — AI that moves from conversation to execution
 
-> **Latest technical update (November 4, 2026):** [Execution evidence, Windows integration, and Self-Healer status](docs/update-2026-11-04.md). The reported 31 passing targeted Self-Healer tests do not yet certify full autonomous repair.
+**An agentic Windows technology built to turn business requests into actions, native documents and verifiable outcomes.**
 
-**From human intent to real, verifiable Windows execution.**
+[Français](README-FR.md) · [Technical evidence](docs/update-2026-11-04.md) · [Architecture](docs/architecture-public.md) · [Partnership opportunities](docs/partnership.md)
 
-[English](README.md) · [Français](README-FR.md) · [Technology status — November 2026](docs/status-november-2026.md) · [Stabilization roadmap](docs/roadmap.md) · [Partnership](docs/partnership.md)
+NAVA is a **Python-based, proprietary, local-first agentic AI project** created by **IA NAVA in Occitanie, France**. Its objective is to let professionals delegate work across familiar desktop applications, not just obtain text responses. NAVA combines language-model reasoning, mission orchestration, Windows execution, observation and result verification.
 
-NAVA is a **local-first, hybrid agentic AI project** developed by **IA NAVA in Occitanie, France**. It aims to understand natural-language requests, use Windows software to perform tasks, produce native files, check actual outcomes and preserve evidence. It is more than a text-generating assistant: the objective is **computer-based execution with verification**.
+**Project stage — November 4, 2026:** advanced functional prototype; selected real-world capabilities demonstrated, with reliability and end-to-end autonomous recovery still under stabilization.
 
-## The NAVA ecosystem — one agentic vision, three complementary components
+## The opportunity
 
-| Component | Purpose | Current scope |
+Small businesses lose time switching between inboxes, calendars, documents and desktop software. NAVA targets the workflow itself: interpret a request, perform coordinated actions, produce the expected deliverables and verify what happened.
+
+### Practical scenarios
+
+| Product | What it is designed to do | Evidence to date |
 | --- | --- | --- |
-| **`NAVA Core`** | Original general-purpose Windows agent: understand an objective, coordinate software actions, observe outcomes and retain execution evidence. | Proprietary engine, undergoing scenario-based stabilization. |
-| **`NAVA Mail`** | Convert professional incoming email into actionable workflows: interpret requests, prepare documents and quotations, draft responses and manage verified attachments. | Functional demonstrator; complete end-to-end and authorized Auto-send certification pending. |
-| **`NAVA Agenda`** | Turn calendar appointments into actionable work: read events, interpret descriptions, prepare Word/Excel/PowerPoint/PDF documents or quotations, draft associated messages and create or update events. | Evolving demonstrator; multi-application execution and external actions require verification and appropriate approval. |
+| **NAVA Mail** | Turn incoming requests into document preparation, quotations, drafts and verified attachments | Actual Office deliverables, message drafts and matching MIME attachments found in audited mission archives |
+| **NAVA Agenda** | Turn calendar event descriptions into executable work: prepare files and communications, create/update events where authorized | Event-related execution archives, Office outputs and SMTP/calendar receipts |
+| **NAVA Core + Computer Agent** | Coordinate tasks and operate supported Windows applications | Real Windows text-file operations and a Thunderbird draft reported in targeted tests |
 
-NAVA Mail and NAVA Agenda are specialized applications within the **original NAVA Core agentic vision**, not replacements for it. Their interfaces and connection configurations may be independent while using the same outcome-oriented engineering principles. Described functions are targets or scenario-specific demonstrations, **not a claim that every workflow is production-certified**.
+**A real workflow example:** a meeting request can become an interpreted mission, a prepared document, an associated email draft and a record of the actual results. Sending or changing remote data is subject to appropriate authorization.
 
-[Explore NAVA Agenda](docs/nava-agenda.md) · [Explore NAVA Mail](docs/nava-mail.md) · [Public architecture](docs/architecture-public.md)
+## Technology, not a no-code workflow template
 
-
-## What NAVA is built to do
-
-- **Understand objectives:** interpret requests formulated in ordinary language and identify the expected outcomes.
-- **Operate Windows:** interact with supported application windows and local files.
-- **Produce deliverables:** Word, Excel and PowerPoint documents in supported scenarios.
-- **Assist with calendars and email:** read and interpret appointments, prepare documents and email drafts; obtain human approval before sensitive actions.
-- **Coordinate workflows:** work across several applications while preserving the original user objective.
-- **Verify the result:** distinguish a successful technical command from a completed business mission.
-- **Learn with safeguards:** retain useful execution experience; autonomous recovery is still being evaluated.
-
-## From intent to verified results
+NAVA is developed as a **Python software system**, not simply a collection of no-code or n8n automations. Its architecture is designed to preserve business intent and coordinate different tools while checking effects rather than assuming a successful response means the work is complete.
 
 ```text
-Natural-language request
-          ↓
-Identify all requested outcomes
-          ↓
-Propose an execution plan (advisory)
-          ↓
-Select existing capabilities
-          ↓
-Execute in the Windows environment
-          ↓
-Observe and verify actual results
-          ↓
-Track completed and remaining outcomes
-          ↓
-Report evidence / require approval where needed
+Business request
+      ↓
+Language model / authorized local or cloud reasoning
+      ↓
+NAVA Core — mission planning and coordination
+      ↓
+NAVA Bridge — execution orchestration
+      ↓
+Computer Agent / Mail / Agenda / Office — real actions
+      ↓
+Observer + Supervisor — monitoring and evidence
+      ↓
+Self-Healer — controlled recovery research
+      ↓
+Verified outcome / human approval where required
 ```
 
-A planning model must not silently narrow the user’s objective. A click, a generated response, or a passing unit test does not by itself prove that a task is complete.
+Mail and Agenda are specialized applications alongside the general-purpose Core. The ecosystem also contains Supervisor, Observer/Watcher, Bridge, Self-Healer and an evolving Community Manager module. [Full nine-module status](docs/module-status-2026-11-04.md).
 
-## Example business scenario
+## Evidence, not just a concept
 
-> Review my upcoming meetings, prepare the required documents, and draft the associated emails.
+A November 2026 offline review documented:
 
-The intended workflow is to inspect relevant appointments, understand their requirements, find the information already available, create the documents, prepare email drafts and attachments, and verify the resulting files and application states. Sending messages or making other sensitive changes requires the relevant authorization.
+- **18 structurally checked native Office files:** 9 Excel, 6 Word and 3 PowerPoint.
+- **9 MIME attachments** byte-for-byte matching archived files.
+- **9 NAVA Mail mission folders** (8 with deliverables and drafts) and **11 Agenda execution folders**, including recorded calendar and SMTP operations.
+- Targeted Windows and application-execution tests; a Self-Healer **isolated repair scenario** reported a real code fix and passing test.
 
-## Local-first, with controlled cloud assistance
+The developer reported successful sending and event creation in the test environment. **Independent delivery verification, complete GUI workflow repeatability and autonomous recovery of a real interrupted business mission are not yet certified.** Test totals refer to different campaigns and must not be added together.
 
-NAVA is developed for the user's Windows environment, with local models and applications as a foundation. Cloud assistance may be used when enabled and permitted. A cloud-generated response is **not** considered proof that a final native file exists on the PC: delivery and content must be verified separately.
+[Explore the scoped execution evidence](docs/evidence-review-november-2026.md) · [Read the November 4 technical update](docs/update-2026-11-04.md).
 
-## Real-world capability status
+## Why it matters
 
-NAVA has demonstrated individual Windows and office operations, including recent calendar-related tests through its interface and successful real minimization/restoration of the NAVA window. Native Excel quotations have also been observed and verified in specific tests. However, **full multi-application business completion, Chrome tab-context recovery, all email/attachment scenarios and autonomous self-repair are not yet comprehensively certified**.
+NAVA's differentiating **engineering direction** is a single chain from **intent → coordinated desktop action → native output → observation → proof**. The opportunity is to automate cross-application administrative tasks in SMEs using their existing work environment. Productivity gains, pricing and scalability will need validation through measured pilots; no unsupported market-leadership or financial claims are made.
 
-See the [November 3, 2026 technical status](docs/status-november-2026.md): 126 targeted Core/Mail tests passed; an Agenda test campaign was blocked by a Windows COM exception. Findings are scoped to the audited checkout and distinguish local test success from real external effects.
+## Development priorities
 
-## NAVA Mail — professional email automation
+1. Reliable multi-application execution initiated from the real interface.
+2. Automatic collection and independent verification of actual mission outcomes.
+3. Repair-and-resume capability on an interrupted real mission.
+4. Reproducible Mail, Agenda and Office acceptance scenarios and secure permissions.
 
-**Functional demonstrator undergoing end-to-end validation (October 29, 2026).**
+**The product is not yet marketed as fully autonomous or production-certified.** Technical failures and outstanding verification are documented openly in the linked audit and roadmap.
 
-NAVA Mail is the email-oriented workflow of NAVA. From a professional message and its context, it aims to identify multiple requests, prepare a coordinated action plan, generate appropriate business deliverables and compose a response with verified attachments.
+## Collaboration and investment
 
-- **Business outputs:** summaries, Word / Excel / PowerPoint / PDF deliverables where supported, quotations without invented prices, appointment preparation and correspondence.
-- **Traceable execution:** each requested action is marked completed, pending, blocked or requiring correction, based on actual outcomes.
-- **Supervised mode:** sensitive external actions are submitted for the appropriate human approval.
-- **Auto mode:** the demonstrator describes response sending without individual approval **only within a specifically authorized scope**, after all completeness and verification checks pass. This capability is **not yet certified end-to-end**; blocked, uncertain or unauthorized actions are held for review.
-- **Privacy:** processing of email and calendar contents follows the project's local-data restrictions; external services require authorization.
+IA NAVA is exploring **technical partnerships, supervised pilot deployments and investment conversations** to accelerate stabilization, productization and market validation. A live demonstration and the available test evidence can be discussed directly.
 
-**Later archived October 28 results:** 4,597 passing tests, 1 warning and 31 passing subtests, as reported by the November 3 audit. **Fresh targeted November 3 results:** 126 Core/Mail tests passed. Several real missions remain incomplete, and SMTP sending has not been demonstrated in this audit; these figures do not establish production readiness.
+[Partnership and investment information](docs/partnership.md) · [Stabilization roadmap](docs/roadmap.md) · [Full technical status](docs/status-november-2026.md)
 
-The next acceptance stage covers a real multitask email through the actual interface in both modes, file and attachment verification, calendar invitees/Meet details and complete regression testing.
+**IA NAVA — France** · [ianava.fr](https://www.ianava.fr) · [contact@ianava.fr](mailto:contact@ianava.fr)
 
-[Read the public NAVA Mail overview](docs/nava-mail.md).
-
-## Engineering and acceptance principles
-
-1. **No new features during stabilization:** prioritize reliability of existing commands.
-2. **One acceptance reference:** the existing natural-language command test protocol.
-3. **Real interface first:** direct runner success is not a substitute for interface-based execution.
-4. **Repeated evidence:** a completed capability must show real effects, verification and persistent proof on repeat runs.
-5. **No scenario-specific hardcoding:** fix general causes; keep ownership and approval safeguards intact.
-6. **Reuse existing modules:** avoid unnecessary architectural proliferation.
-
-## Why this matters to SMEs
-
-The target is practical delegation of recurring administrative tasks: meeting preparation, document production, quotations, management dashboards, customer dossiers and correspondence drafts. The expected value is less time spent coordinating software and more time available for decisions and customer work. Performance and economic gains must be measured in actual deployments; no general productivity percentage is claimed here.
-
-## Public documentation and confidentiality
-
-This repository is a **public project presentation**, not the full private source repository or a claim of independent certification. Detailed orchestration, proprietary code, memory structures, credentials, business records and sensitive execution logs are not published.
-
-- [Technology status — November 2026](docs/status-november-2026.md)
-- [Historical status — October 2026](docs/status-october-2026.md)
-- [Public architecture](docs/architecture-public.md)
-- [Current stabilization roadmap](docs/roadmap.md)
-- [Partnership, investment and acquisition](docs/partnership.md)
-- [French presentation](README-FR.md)
-
-**IA NAVA** · [ianava.fr](https://www.ianava.fr) · [contact@ianava.fr](mailto:contact@ianava.fr)
-
-© 2026 IA NAVA. Proprietary project; all rights reserved.
-
-## Recent execution evidence — November 3, 2026
-
-An independent offline archive review confirmed **eight Mail mission folders with deliverables and drafts**, **nine byte-matched MIME attachments**, and **eleven Agenda execution folders** with Word/Excel/PowerPoint outputs, drafts and SMTP/calendar receipts. **The developer confirms that sending and calendar event creation were executed.** Independent live inbox delivery and remote calendar persistence were not checked by the archive reviewer. One Mail mission remains incomplete and some tracking statuses need reconciliation. [Read the scoped evidence review](docs/evidence-review-november-2026.md).
+© 2026 IA NAVA. Proprietary project. All rights reserved. This public repository is a project presentation, not the private source code.
