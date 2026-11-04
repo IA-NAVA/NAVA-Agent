@@ -1,5 +1,7 @@
 # NAVA — Neural Agentic Virtual Agent
 
+> **Dernière actualisation technique (4 novembre 2026) :** [preuves d'exécution, intégration Windows et état du Self-Healer](docs/update-2026-11-04.md). Les 31 tests ciblés réussis rapportés ne constituent pas une certification de réparation autonome complète.
+
 **De l'intention humaine à l'exécution réelle et vérifiable sur Windows.**
 
 [Français](README-FR.md) · [English](README.md) · [État technique — novembre 2026](docs/status-november-2026.md) · [Feuille de route](docs/roadmap.md) · [Partenariat](docs/partnership.md)
