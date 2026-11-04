@@ -1,5 +1,7 @@
 # NAVA — Neural Agentic Virtual Agent
 
+> **Latest technical update (November 4, 2026):** [Execution evidence, Windows integration, and Self-Healer status](docs/update-2026-11-04.md). The reported 31 passing targeted Self-Healer tests do not yet certify full autonomous repair.
+
 **From human intent to real, verifiable Windows execution.**
 
 [English](README.md) · [Français](README-FR.md) · [Technology status — November 2026](docs/status-november-2026.md) · [Stabilization roadmap](docs/roadmap.md) · [Partnership](docs/partnership.md)
