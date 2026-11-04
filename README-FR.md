@@ -1,120 +1,83 @@
-# NAVA — Neural Agentic Virtual Agent
+# NAVA — L'intelligence artificielle qui passe de la conversation à l'exécution
 
-> **Dernière actualisation technique (4 novembre 2026) :** [preuves d'exécution, intégration Windows et état du Self-Healer](docs/update-2026-11-04.md). Les 31 tests ciblés réussis rapportés ne constituent pas une certification de réparation autonome complète.
+**Une technologie agentique Windows conçue pour transformer les demandes professionnelles en actions, documents et résultats vérifiables.**
 
-**De l'intention humaine à l'exécution réelle et vérifiable sur Windows.**
+[English](README.md) · [Preuves techniques](docs/update-2026-11-04.md) · [Architecture](docs/architecture-public.md) · [Partenariats](docs/partnership.md)
 
-[Français](README-FR.md) · [English](README.md) · [État technique — novembre 2026](docs/status-november-2026.md) · [Feuille de route](docs/roadmap.md) · [Partenariat](docs/partnership.md)
+NAVA est un projet d'**intelligence artificielle agentique propriétaire, développé en Python**, par **IA NAVA en Occitanie**. Son objectif : permettre aux professionnels de déléguer des tâches dans leurs logiciels habituels, au-delà d'une simple réponse conversationnelle. NAVA associe compréhension par modèle de langage, orchestration des missions, exécution Windows, observation et contrôle des résultats.
 
-NAVA est un projet d'**agent IA local et hybride**, développé par **IA NAVA en Occitanie**. Il vise à comprendre une commande naturelle, piloter des logiciels Windows, produire des livrables natifs, vérifier les résultats et conserver des preuves d'exécution. Son objectif n'est pas simplement de répondre : **il doit agir, contrôler et démontrer le résultat**.
+**Maturité au 4 novembre 2026 :** prototype avancé fonctionnel, avec plusieurs capacités démontrées en conditions réelles. La fiabilité de l'exécution complète et la récupération autonome après incident sont en cours de stabilisation.
 
-## L'écosystème NAVA — un même objectif agentique, trois composantes
+## L'opportunité
 
-| Composante | Rôle | État |
+Dans une TPE ou une PME, une simple demande mobilise souvent boîte mail, agenda, documents, devis et plusieurs applications. NAVA vise à exécuter cette chaîne de travail : comprendre la demande, coordonner les actions, produire les livrables et vérifier le résultat.
+
+### Trois applications au cœur du projet
+
+| Application | Usage métier visé | Résultats déjà documentés |
 | --- | --- | --- |
-| **`NAVA Core`** | Agent Windows généraliste initial : comprendre une demande, coordonner des logiciels, observer et prouver les résultats. | Moteur propriétaire en stabilisation selon les scénarios. |
-| **`NAVA Mail`** | Transformer les e-mails professionnels en tâches : analyser, préparer les documents et devis, composer les réponses avec pièces jointes vérifiées. | Démonstrateur fonctionnel ; validation complète et envoi Auto autorisé encore à certifier. |
-| **`NAVA Agenda`** | Transformer les rendez-vous en actions : lire les événements, comprendre leurs descriptions, préparer Word/Excel/PowerPoint/PDF ou devis, brouillons d'e-mails, créer ou modifier des rendez-vous. | Démonstrateur en évolution ; les enchaînements multi-applications et actions externes exigent vérification et autorisations appropriées. |
+| **NAVA Mail** | Transformer les e-mails en documents, devis, brouillons et réponses avec pièces jointes | Livrables Office, brouillons et pièces jointes MIME correspondantes présents dans les archives auditées |
+| **NAVA Agenda** | Transformer les descriptions des rendez-vous en tâches : documents, communications et opérations d'agenda | Dossiers d'exécution, fichiers Office, reçus SMTP et opérations d'agenda consignées |
+| **NAVA Core + Computer Agent** | Coordonner et exécuter des actions dans des logiciels Windows | Opérations Windows réelles et brouillon Thunderbird rapportés dans les campagnes ciblées |
 
-NAVA Mail et NAVA Agenda sont des **applications spécialisées de la vision initiale NAVA Core**, et non son remplacement. Elles peuvent avoir des interfaces et configurations de connexion indépendantes tout en reprenant les principes d'exécution vérifiable. Les capacités décrites sont des objectifs ou des démonstrations limitées à certains scénarios, **pas une certification de toutes les fonctions en production**.
+**Exemple :** une demande liée à un rendez-vous peut déclencher l'analyse de son contexte, la création d'un document, la préparation d'un e-mail et la vérification des livrables. Les envois et modifications externes restent soumis aux autorisations appropriées.
 
-[Découvrir NAVA Agenda](docs/nava-agenda.md) · [Découvrir NAVA Mail](docs/nava-mail.md) · [Architecture publique](docs/architecture-public.md)
+## Une technologie Python, pas un simple assemblage no-code
 
-
-## Ce que NAVA cherche à accomplir
-
-- **Comprendre la demande :** identifier tous les résultats réellement attendus.
-- **Agir sur le PC :** exploiter les applications et fichiers Windows pris en charge.
-- **Créer des livrables :** Word, Excel et PowerPoint dans les scénarios compatibles.
-- **Exploiter l'agenda et la messagerie :** interpréter des rendez-vous, préparer des documents et des brouillons, avec confirmation pour les actions sensibles.
-- **Coordonner plusieurs logiciels :** conserver l'objectif initial pendant la mission.
-- **Vérifier :** distinguer l'exécution technique de la réussite métier.
-- **Capitaliser sur l'expérience :** apprentissage contrôlé ; réparation autonome encore en validation.
-
-## L'intention reste la référence
+NAVA repose sur un **développement logiciel Python** : il ne se limite pas à l'assemblage de scénarios no-code ou n8n. Son architecture vise à conserver l'intention métier, coordonner plusieurs outils et vérifier les effets réels des commandes exécutées.
 
 ```text
-Commande naturelle
-       ↓
-Effets demandés par l'utilisateur
-       ↓
-Plan d'exécution proposé (non souverain)
-       ↓
-Choix des capacités existantes
-       ↓
-Exécution réelle sur Windows
-       ↓
-Observation et vérification
-       ↓
-Effets obtenus et effets restants
-       ↓
-Preuves et validation humaine si nécessaire
+Demande professionnelle
+          ↓
+Modèles de langage locaux ou cloud autorisés
+          ↓
+NAVA Core — orchestration et suivi de mission
+          ↓
+NAVA Bridge — liaison avec l'exécution
+          ↓
+Computer Agent / Mail / Agenda / Office — actions réelles
+          ↓
+Observer + Supervisor — surveillance et preuves
+          ↓
+Self-Healer — recherche de reprise contrôlée
+          ↓
+Résultat vérifié / validation humaine si nécessaire
 ```
 
-Un plan généré par un modèle ne doit pas diminuer silencieusement la demande. Un clic, une réponse textuelle ou des tests unitaires réussis ne suffisent pas à déclarer une mission terminée.
+Mail et Agenda sont des applications spécialisées complémentaires de NAVA Core. L'écosystème comporte aussi Bridge, Supervisor, Observer/Watcher, Self-Healer et un module Community Manager en développement. [État des neuf modules](docs/module-status-2026-11-04.md).
 
-## Exemple métier
+## Des preuves concrètes
 
-> Analyse mes rendez-vous, prépare les documents nécessaires et crée les brouillons de mails correspondants.
+La revue d'archives de novembre 2026 a identifié :
 
-Le fonctionnement recherché consiste à lire les événements concernés, comprendre leur contexte, retrouver les informations disponibles, préparer les livrables, les joindre aux brouillons lorsque c'est demandé et vérifier les résultats. L'envoi et les autres actions sensibles nécessitent l'autorisation appropriée.
+- **18 fichiers Office structurellement vérifiés :** 9 Excel, 6 Word et 3 PowerPoint.
+- **9 pièces jointes MIME** identiques octet pour octet aux livrables archivés.
+- **9 dossiers de missions Mail**, dont 8 avec livrables et brouillons, et **11 dossiers d'exécution Agenda**, avec des reçus d'opérations d'agenda et de transport SMTP.
+- Des tests réels ciblés sur Windows et des applications ; un scénario isolé de Self-Healer a fait l'objet d'un correctif réel suivi d'un test réussi, selon le rapport.
 
-## Priorité locale, cloud encadré
+Le développeur confirme avoir exécuté des envois et créations de rendez-vous dans son environnement. **La réception distante indépendante, la répétabilité complète depuis les interfaces et la reprise autonome d'une mission réelle interrompue ne sont pas encore globalement certifiées.** Les chiffres des campagnes de tests ne doivent pas être additionnés.
 
-NAVA privilégie les logiciels et modèles disponibles sur le PC Windows. Un service cloud peut assister une mission lorsque son usage est activé et autorisé. Une réponse cloud ne constitue **pas** une preuve de livraison : l'existence, le contenu et la persistance du fichier natif final doivent être contrôlés.
+[Consulter les preuves Mail/Agenda](docs/evidence-review-november-2026.md) · [Bilan technique du 4 novembre](docs/update-2026-11-04.md).
 
-## Niveau de preuve actuel
+## Le potentiel technologique
 
-Plusieurs opérations Windows et bureautiques ont été démontrées. Des scénarios agenda ont réussi via l'interface. La minimisation et restauration réelles de la fenêtre NAVA ont aussi été vérifiées ; un devis Excel a fait l'objet de contrôles concrets. En revanche, **l'enchaînement métier multi-applications complet, la récupération du contexte Chrome, certains brouillons avec pièces jointes et l'auto-réparation autonome restent à certifier**.
+L'approche de NAVA repose sur une chaîne **intention → actions coordonnées sur le poste → livrables natifs → observation → preuves**. Elle vise à automatiser les processus administratifs multi-applications des TPE/PME dans leurs outils existants. Les gains économiques, la capacité de déploiement et le modèle commercial devront être démontrés par des pilotes mesurés ; aucun avantage concurrentiel exclusif n'est revendiqué sans comparaison probante.
 
-Voir le [bilan technique du 3 novembre 2026](docs/status-november-2026.md), qui sépare les tests contractuels des effets réels. L'audit ciblé signale 126 tests Core/Mail réussis et une campagne Agenda bloquée par une exception Windows COM ; sa portée est limitée au checkout audité.
+## Prochaines étapes
 
-## NAVA Mail — assistant de traitement des e-mails professionnels
+1. Stabiliser les missions multi-applications lancées depuis les interfaces réelles.
+2. Collecter et vérifier automatiquement les preuves de résultat.
+3. Valider la correction d'un incident suivie de la reprise de la mission initiale.
+4. Répéter les scénarios critiques Mail, Agenda et Office, avec contrôle des autorisations et des effets réels.
 
-**Démonstrateur fonctionnel en cours de certification de bout en bout (29 octobre 2026).**
+**NAVA est un prototype avancé, pas encore un produit certifié pour une autonomie complète sans surveillance.** Les résultats détaillés et les anomalies restent consultables dans la documentation technique.
 
-NAVA Mail vise à transformer un e-mail professionnel en plusieurs tâches coordonnées : comprendre le message et son contexte, identifier les demandes, préparer un plan multi-actions, générer les livrables pertinents puis préparer une réponse accompagnée des pièces jointes vérifiées.
+## Partenariats et investissement
 
-- **Livrables métier :** synthèses, documents Word / Excel / PowerPoint / PDF selon les scénarios pris en charge, devis sans prix inventés, préparation de rendez-vous et correspondance.
-- **Traçabilité :** chaque action est classée réalisée, en attente, bloquée ou à corriger selon ses effets réels.
-- **Mode supervisé :** validation humaine appropriée avant les opérations externes sensibles.
-- **Mode Auto :** le démonstrateur prévoit l'envoi sans validation individuelle **uniquement dans un périmètre expressément autorisé**, après contrôle complet. L'envoi automatique n'est **pas encore certifié de bout en bout** ; les opérations incertaines, bloquées ou non autorisées restent à valider.
-- **Confidentialité :** respect du traitement local des données mail et agenda ; recours aux services externes sous autorisation.
+IA NAVA recherche des **partenaires techniques, entreprises pilotes et échanges avec des investisseurs** pour accélérer la stabilisation, la transformation en produit et la validation commerciale. Des démonstrations et rapports techniques peuvent étayer ces échanges.
 
-**Bilan historique plus récent (28 octobre) :** 4 597 tests réussis, 1 avertissement, 31 sous-tests réussis, selon le rapport local consulté le 3 novembre. **Audit ciblé du 3 novembre :** 126 tests Core/Mail réussis ; plusieurs missions réelles restent incomplètes et l'envoi SMTP n'a pas été prouvé. Ces résultats ne démontrent pas une mise en production certifiée.
+[Partenariats et investissement](docs/partnership.md) · [Feuille de route](docs/roadmap.md) · [Audit technique complet](docs/status-november-2026.md)
 
-La validation restante concerne le parcours réel depuis l'interface en modes Auto et supervisé, les livrables et pièces jointes, les invités et liens Meet et la non-régression complète.
+**IA NAVA — France** · [ianava.fr](https://www.ianava.fr) · [contact@ianava.fr](mailto:contact@ianava.fr)
 
-[Présentation publique détaillée de NAVA Mail](docs/nava-mail.md).
-
-## Règles de développement
-
-1. **Gel fonctionnel :** aucune nouvelle fonctionnalité avant stabilisation du noyau.
-2. **Protocole d'acceptation de référence :** les commandes naturelles existantes.
-3. **Interface réelle :** un runner direct ne prouve pas le fonctionnement depuis l'interface.
-4. **Preuves répétées :** effet réel, vérification et preuve persistée sur plusieurs exécutions.
-5. **Pas de tests rigidifiés :** corriger la cause générique et conserver les protections.
-6. **Réutilisation du code existant :** pas d'architecture supplémentaire sans nécessité démontrée.
-
-## Utilité pour les TPE et PME
-
-NAVA vise la préparation des rendez-vous, dossiers clients, devis, rapports, tableaux de bord et brouillons de correspondance. L'ambition est de réduire les manipulations informatiques répétitives. Les gains de productivité restent à mesurer en conditions réelles, sans annoncer de pourcentage non démontré.
-
-## Documentation publique et confidentialité
-
-Ce dépôt constitue une **vitrine publique du projet**, pas son code source privé complet ni une certification indépendante. Le moteur interne, les méthodes propriétaires, les données clients, clés, journaux sensibles et éléments de sécurité ne sont pas publiés.
-
-- [Bilan technique — novembre 2026](docs/status-november-2026.md)
-- [Historique technique — octobre 2026](docs/status-october-2026.md)
-- [Architecture publique](docs/architecture-public.md)
-- [Feuille de route de stabilisation](docs/roadmap.md)
-- [Partenariat, investissement et acquisition](docs/partnership.md)
-- [English presentation](README.md)
-
-**IA NAVA** · [ianava.fr](https://www.ianava.fr) · [contact@ianava.fr](mailto:contact@ianava.fr)
-
-© 2026 IA NAVA — Tous droits réservés. Projet propriétaire.
-
-## Preuves d'exécution récentes — 3 novembre 2026
-
-La revue indépendante de l'archive de démonstration confirme **8 dossiers Mail avec livrables et brouillons**, **9 pièces jointes MIME identiques aux fichiers produits**, et **11 dossiers Agenda** contenant des documents Word/Excel/PowerPoint, brouillons et reçus de changement d'événements ou SMTP. **Le développeur confirme que les envois et créations de rendez-vous ont été exécutés.** L'audit hors ligne n'a pas vérifié indépendamment la livraison en boîte de réception ni tous les événements distants. Une mission Mail reste incomplète et des incohérences de suivi sont à corriger. [Lire la revue des preuves](docs/evidence-review-november-2026.md).
+© 2026 IA NAVA. Projet propriétaire. Tous droits réservés. Ce dépôt est une vitrine publique et ne contient pas le moteur source privé.
